@@ -1,0 +1,573 @@
+/**** project thumbnail images - main page ******/
+
+#seveneves-title-sequence {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+}
+
+#terra-sizzle-reel {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#ikea-annual-report {
+	background-image: url(images/ikea-annual-report/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#various-posters {
+	background-image: url(images/various-posters/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#where-will-i-go {
+	background-image: url(images/where-will-i-go/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#urban-grow {
+	background-image: url(images/urban-grow/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#speculate-create {
+	background-image: url(images/speculate-create/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	overflow: hidden;
+}
+
+#medusozoa {
+	background-image: url(images/medusozoa/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+}
+
+#alien {
+	background-image: url(images/alien/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#denis-villeneuve-retrospective {
+	background-image: url(images/denis-villeneuve-retrospective/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#bits {
+	background-image: url(images/bits/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+#essential-asimov {
+	background-image: url(images/essential-asimov/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+/**** project thumbnail images - side projects ****/
+
+/*** 
+
+#various-posters {
+	background-image: url(images/various-posters/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+} 
+
+***/
+
+/**** ABOOUT + CONTACT ****/
+
+.burton-headshot {
+	background-image: url(images/about-contact/burton-headshot.jpg)
+}
+
+/**** PROJECT: SEVENEVES TITLE SEQUENCE ****/
+
+.seveneves-titles-1 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-1.jpg)
+}
+
+.seveneves-titles-2 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-2.jpg)
+}
+
+.seveneves-titles-3 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-3.jpg)
+}
+
+.seveneves-titles-4 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-4.jpg)
+}
+
+.seveneves-titles-5 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-5.jpg)
+}
+
+.seveneves-titles-6 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-6.jpg)
+}
+
+.seveneves-titles-7 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-7.jpg)
+}
+
+.seveneves-titles-8 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-8.jpg)
+}
+
+.seveneves-titles-9 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-9.jpg)
+}
+
+.seveneves-titles-10 {
+	background-image: url(images/seveneves-title-sequence/seveneves-titles-10.jpg)
+}
+
+/**** PROJECT: TERRA SIZZLE REEL ****/
+
+.terra-sizzle-1 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-1.jpg)
+}
+
+.terra-sizzle-2 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-2.jpg)
+}
+
+.terra-sizzle-3 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-3.jpg)
+}
+
+.terra-sizzle-4 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-4.jpg)
+}
+
+.terra-sizzle-5 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-5.jpg)
+}
+
+.terra-sizzle-6 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-6.jpg)
+}
+
+.terra-sizzle-7 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-7.jpg)
+}
+
+.terra-sizzle-8 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-8.jpg)
+}
+
+.terra-sizzle-9 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-9.jpg)
+}
+
+.terra-sizzle-10 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-10.jpg)
+}
+
+.terra-sizzle-11 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-11.jpg)
+}
+
+.terra-sizzle-12 {
+	background-image: url(images/terra-sizzle-reel/terra-sizzle-12.jpg)
+}
+
+/**** PROJECT: IKEA ANNUAL REPORT ****/
+
+.annual-report1 {
+	background-image: url(images/ikea-annual-report/annual-report1.jpg);
+}
+
+.annual-report2 {
+	background-image: url(images/ikea-annual-report/annual-report2.jpg);
+}
+
+.annual-report3 {
+	background-image: url(images/ikea-annual-report/annual-report3.jpg);
+}
+
+.annual-report4 {
+	background-image: url(images/ikea-annual-report/annual-report4.jpg);
+}
+
+.annual-report5 {
+	background-image: url(images/ikea-annual-report/annual-report5.jpg);
+}
+
+.annual-report6 {
+	background-image: url(images/ikea-annual-report/annual-report6.jpg);
+}
+
+.annual-report7 {
+	background-image: url(images/ikea-annual-report/annual-report7.jpg);
+}
+
+/**** PROJECT: VARIOUS POSTERS ****/
+
+.project-image-format {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow:hidden;
+	
+	height: 50vw;
+}
+
+.project-image-format-wide {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+	
+	height: 40vw;
+}
+
+.project-image-black-bg {
+	position: relative;
+	width: 60vw;
+	background-color: black;
+	padding: 2vw;
+	margin-bottom: 1vw;
+	overflow: hidden;
+}
+
+.various-posters-1 {
+	background-image: url(images/various-posters/various-posters-1.jpg);
+}
+
+.various-posters-2 {
+	background-image: url(images/various-posters/various-posters-2.jpg);
+}
+
+.various-posters-3 {
+	background-image: url(images/various-posters/various-posters-3.jpg)
+}
+
+.various-posters-4 {
+	background-image: url(images/various-posters/various-posters-4.jpg)
+}
+
+.various-posters-5 {
+	background-image: url(images/various-posters/various-posters-5.jpg)
+}
+
+.various-posters-6 {
+	background-image: url(images/various-posters/various-posters-6.jpg)
+}
+
+.various-posters-7 {
+	background-image: url(images/various-posters/various-posters-7.jpg)
+}
+
+.various-posters-8 {
+	background-image: url(images/various-posters/various-posters-8.jpg)
+}
+
+.various-posters-9 {
+	background-image: url(images/various-posters/various-posters-9.jpg)
+}
+
+.various-posters-10 {
+	background-image: url(images/various-posters/various-posters-10.jpg)
+}
+
+.various-posters-11 {
+	background-image: url(images/various-posters/various-posters-11.jpg)
+}
+
+.various-posters-12 {
+	background-image: url(images/various-posters/various-posters-12.jpg)
+}
+
+/**** PROJECT: WHERE WILL I GO ****/
+
+.where-will-i-go-1 {
+	background-image: url(images/various-posters/where-will-i-go-1.jpg);
+}
+
+.where-will-i-go-2 {
+	background-image: url(images/various-posters/where-will-i-go-2.jpg);
+}
+.where-will-i-go-3 {
+	background-image: url(images/various-posters/where-will-i-go-3.jpg);
+}
+
+.where-will-i-go-4 {
+	background-image: url(images/various-posters/where-will-i-go-4.jpg);
+}
+
+/**** PROJECT: URBAN GROW ****/
+
+.urban-grow-1 {
+	background-image: url(images/urban-grow/urban-grow1.jpg);
+}
+
+.urban-grow-2 {
+	background-image: url(images/urban-grow/urban-grow2.jpg);
+}
+
+.urban-grow-3 {
+	background-image: url(images/urban-grow/urban-grow3.jpg);
+}
+
+.urban-grow-4 {
+	background-image: url(images/urban-grow/urban-grow4.jpg);
+}
+
+.urban-grow-5 {
+	background-image: url(images/urban-grow/urban-grow5.jpg);
+}
+
+.urban-grow-6 {
+	background-image: url(images/urban-grow/urban-grow6.jpg);
+}
+
+.urban-grow-7 {
+	background-image: url(images/urban-grow/urban-grow7.jpg);
+}
+
+.urban-grow-8 {
+	background-image: url(images/urban-grow/urban-grow8.jpg);
+}
+
+/**** PROJECT: SPECULATE CREATE ****/
+
+.speculate-create-1 {
+	background-image: url(images/speculate-create/speculate-create1.jpg);
+}
+
+.speculate-create-2 {
+	background-image: url(images/speculate-create/speculate-create2.jpg);
+}
+
+.speculate-create-3 {
+	background-image: url(images/speculate-create/speculate-create3.jpg);
+}
+
+.speculate-create-4 {
+	background-image: url(images/speculate-create/speculate-create4.jpg);
+}
+
+.speculate-create-5 {
+	background-image: url(images/speculate-create/speculate-create5.jpg);
+}
+
+/**** PROJECT: ALIEN ****/
+
+.alien1 {
+	background-image: url(images/alien/alien1.png);
+}
+
+.alien2 {
+	background-image: url(images/alien/alien2.jpg);
+}
+
+.alien3 {
+	background-image: url(images/alien/alien3.jpg);
+}
+
+.alien4 {
+	background-image: url(images/alien/alien4.jpg);
+}
+
+.alien5 {
+	background-image: url(images/alien/alien5.jpg);
+}
+
+.alien6 {
+	background-image: url(images/alien/alien6.jpg);
+}
+
+.alien7 {
+	background-image: url(images/alien/alien7.jpg);
+}
+
+.alien8 {
+	background-image: url(images/alien/alien8.jpg);
+}
+
+.alien9 {
+	background-image: url(images/alien/alien9.jpg);
+}
+
+.alien10 {
+	background-image: url(images/alien/alien10.jpg);
+	
+}
+
+/**** PROJECT: MEDUSOZOA ****/
+
+.medusozoa-1 {
+	background-image: url(images/medusozoa/medusozoa-mockup1.jpg);
+}
+
+.medusozoa-2 {
+	background-image: url(images/medusozoa/medusozoa-mockup2.jpg);
+}
+
+.medusozoa-3 {
+	background-image: url(images/medusozoa/medusozoa-mockup3.jpg);
+}
+
+.medusozoa-4 {
+	background-image: url(images/medusozoa/medusozoa-mockup4.jpg);
+}
+
+.medusozoa-5 {
+	background-image: url(images/medusozoa/medusozoa-mockup5.jpg);
+}
+
+.medusozoa-6 {
+	background-image: url(images/medusozoa/medusozoa-mockup6.jpg);
+}
+
+.medusozoa-7 {
+	background-image: url(images/medusozoa/medusozoa-mockup7.jpg);
+}
+
+.medusozoa-8 {
+	background-image: url(images/medusozoa/medusozoa-mockup8.jpg);
+}
+/**** PROJECT: B.I.T.S. ****/
+
+.bits-1 {
+	background-image: url(images/bits/bits-1.jpg);
+}
+
+.bits-2 {
+	background-image: url(images/bits/bits-2.jpg);
+}
+
+.bits-3 {
+	background-image: url(images/bits/bits-3.jpg);
+}
+
+.bits-4 {
+	background-image: url(images/bits/bits-4.jpg);
+}
+
+.bits-5 {
+	background-image: url(images/bits/bits-5.jpg);
+}
+
+/**** PROJECT: ESSENTIAL ASIMOV ****/
+
+.essential-asimov-1 {
+	background-image: url(images/essential-asimov/asimov1.jpg);
+}
+
+.essential-asimov-2 {
+	background-image: url(images/essential-asimov/asimov2.jpg);
+}
+
+.essential-asimov-3 {
+	background-image: url(images/essential-asimov/asimov3.jpg);
+}
+
+.essential-asimov-4 {
+	background-image: url(images/essential-asimov/asimov4.jpg);
+}
+
+.essential-asimov-5 {
+	background-image: url(images/essential-asimov/asimov5.jpg);
+}
+
+/************************************************************************************/
+
+/**** SIDE PROEJECT IMAGES ****/
+
+/** face-sketch ***/
+
+.grass-boy{
+	background-image: url(images/side-projects/grass-boy/grass-boy.jpg)
+}
+
+.grass-boy2{
+	background-image: url(images/side-projects/grass-boy/grass-boy2.jpg)
+}
+
+.face-sketch {
+	background-image: url(images/side-projects/face-sketch/face-sketch.jpg)
+}
+
+/** Landon + Burton Collab ***/
+
+.lb-collab1 {
+	background-image: url(images/side-projects/landon-burton-collab/lb-collab1.jpg)
+}
+
+.lb-collab2 {
+	background-image: url(images/side-projects/landon-burton-collab/lb-collab2.jpg)
+}
+
+.lb-collab3 {
+	background-image: url(images/side-projects/landon-burton-collab/lb-collab3.jpg)
+}
+
+/** Motion Play ***/
+
+.motion-play {
+	background-image: url(images/side-projects/motion-play/motion-play.gif);
+}
+
+/** Moonman ***/
+
+.moonman1 {
+	background-image: url(images/side-projects/moonman/moonman1.jpg)
+}
+
+.moonman2 {
+	background-image: url(images/side-projects/moonman/moonman2.jpg)
+}
+
+.moonman3 {
+	background-image: url(images/side-projects/moonman/moonman3.jpg)
+}
+
+/** Plant Cru ***/
+
+.plant-cru1 {
+	background-image: url(images/side-projects/plant-cru/plant-cru1.jpg);
+}
+
+.plant-cru2 {
+	background-image: url(images/side-projects/plant-cru/plant-cru2.jpg);
+}
+
+

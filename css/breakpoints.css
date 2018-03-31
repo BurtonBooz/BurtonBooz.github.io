@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1266px) {
+	
+/** main-page **/
+	
+	#header-bar-bg {
+		width: 900px;
+	}
+	
+	#header-bar {
+		width: 900px;
+	}
+	
+	#project-buffer {
+		width: 900px;
+	}
+	
+	#burtonbooz-text {
+		font-size: 8.5px;
+		letter-spacing: 1px;
+		padding-top: 0px;
+	}
+	
+	.header-text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	#project-container {
+		width: 900px;
+	}
+	
+	.project-title {
+		padding-top: 150px;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	#footer-bar {
+		width: 900px;
+	}
+	
+/** ABOUT & CONTACT **/
+
+.profile-image-format {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+	
+	height: 300px;
+	width: 235px;
+}
+
+.elsewhere-text-format {
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.about-contact-text-format {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+	
+/** projects **/
+	
+	.grid-container {
+		width: 900px;
+	}
+	
+	#project-page {
+		position: relative;
+		height: 100vh;
+		width: 900px;
+	}
+	
+	#project-image-buffer {
+		width: 500px;
+	}
+  
+	.project {
+    height: 300px;
+		width: 300px;
+  }
+	
+	#project-image-container {
+		position: absolute;
+		width: 600px;
+		padding-left: 25px;
+	}
+	
+		.project-info {
+		width: 300px;
+	}
+	
+	.header-text-project {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	.project-header-text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	.project-info-text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	/** side-projects **/
+	
+	#side-project-image-container {
+	position: absolute;
+	width: 500px;
+	}
+}
+
+@media only screen and (max-width: 966px) {
+
+/** main-page **/
+	
+	#header-bar-bg {
+		width: 900px;
+	}
+	
+	#header-bar {
+		width: 900px;
+	}
+	
+	#project-buffer {
+		width: 300px;
+	}
+	
+	#project-container {
+		width: 600px;
+	}
+   
+	.project {
+    height: 300px;
+		width: 300px;
+  }
+	
+	#project-image-container {
+		width: 200px;
+	}
+	
+	/** footer **/
+	
+	#footer-bar {
+		width: 300px;
+	}
+
+/** projects **/
+
+	.grid-container {
+			width: 300px;
+		}
+
+	#project-page {
+			position: relative;
+			height: 100vh;
+			width: 300px;
+		}
+	
+	.project-info {
+		width: 250px;
+	}
+	
+	.header-text-project {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	.project-header-text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	.project-info-text {
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	
+	/** side-projects **/
+	
+	#side-project-image-container {
+	position: absolute;
+	width: 300px;
+	}
+	
+	.hr {
+		width: 300px;
+	}
+}

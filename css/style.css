@@ -1,0 +1,376 @@
+/** Links **/
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/*** current page ***/
+
+.current-page {
+	font-family: sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	height: 65px;
+	padding-top: 25px;
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/** HEADER **/
+
+#header-bar-bg {
+	height: 65px;
+	width: 100vw;
+	position:fixed;
+	background-color:white;
+	z-index: 9999;
+}
+
+#header-bar {
+	position: absolute;
+	width: 1200px;
+	
+	display:flex;
+	justify-content: space-between;
+}
+
+.header-text-box {
+	text-align: center;
+	height: 65px;
+	padding-top: 25px;
+}
+
+#burtonbooz-text {
+	font-family: sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 11px;
+	font-weight: 400;
+	color: black;
+	text-decoration: none;
+	line-height: 15px;
+	text-align: left;
+	padding-top: 2px;
+}
+
+.header-text {
+	font-family: sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 13px;
+	font-weight: 400;
+	color: black;
+	text-decoration: none;
+}
+
+.header-text:hover {
+	font-weight:800;
+}
+
+#header-bar-buffer {
+	height: 65px;
+	background-color: white;
+	z-index: 1;
+}
+
+#buffer {
+	height: 65px;
+	background-color: white;
+	z-index: 1;
+}
+
+a:active {
+	font-style: italic;
+}
+
+/******** individual header bar ********/
+
+#header-bar-bg {
+	height: 65px;
+	width: 100vw;
+	position:fixed;
+	background-color:white;
+	z-index: 9999;
+}
+
+#header-bar-project {
+	position: absolute;
+	width: 600px;
+	
+	display:flex;
+	justify-content: space-between;
+}
+
+#footer-bar {
+	position: fixed;
+	padding: 2px;
+	bottom: 0;
+	background-color: white;
+	width: 100vw;
+	
+	font-family: sans-serif;
+	font-size: 10px;
+	letter-spacing: .5px;
+	
+	z-index: 4;
+}
+
+/** ABOUT & CONTACT **/
+
+.profile-image-format {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+	
+	height: 405px;
+	width: 320px;
+}
+
+.elsewhere-text-format {
+	padding-bottom: 20px;
+		padding-left: 20px;
+}
+
+.about-contact-text-format {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+/** PROJECTS **/
+
+/** Projects – Main Page **/
+
+#project-container {
+	width: 1200px;
+	position: absolute;
+	height: auto;
+	margin: left;
+}
+
+#project-buffer {
+	width: 1200px;
+	height: 65px;
+}
+
+.project {
+	height: 400px;
+	
+	opacity: 1;
+	
+	transition: opacity 2s;
+}
+
+.project-title {
+	font-family: Akkurat Pro, sans-serif;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: 13px;
+	text-align: center;
+	
+	padding-top: 200px;
+	
+	position: relative;
+	
+	opacity: 0;
+	
+	transition: opacity 2s, letter-spacing 1s;
+}
+
+.project-image-thumbnail {
+	position: absolute;
+	height:inherit;
+	width: inherit;
+	opacity: 1;
+	
+	transition: opacity 1s;
+}
+
+.project:hover {
+	opacity: 1;
+}
+
+.project:hover .project-image-thumbnail {
+	opacity: .1;
+}
+
+.project:hover .project-title {
+	opacity: 1;
+}
+
+.project:hover .project-title{
+	letter-spacing: 3px;
+}
+
+/** Projects – Project Page **/
+
+.header-text-project {
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	font-size: 13px;
+	font-weight: 800;
+	text-align: left;
+	padding-top: 25px;
+	color: black;
+	text-decoration: none;
+	
+	padding-top: 100px;
+	padding-left: 30px;
+}
+
+.project-header-text {
+	font-family: sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 13px;
+	font-weight: 800;
+	text-align: left;	
+}
+
+.project-info-text {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 20px;
+}
+
+#project-page {
+	position: relative;
+	height: 100vh;
+	width: 1200px;	
+}
+
+.project-image {
+	margin: left;
+	width: 60vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+
+#project-image-buffer {
+	height: 65px;
+}
+
+#project-image-container {
+	position: absolute;
+	width: 800px;
+	padding-left: 30px;
+}
+
+.project-info-box {
+	position: fixed;
+	width: 100px;
+	height: 200px;
+	z-index: 1;
+	
+	opacity: 1;
+}
+
+.project-info {
+	position: fixed;
+	background-color: white;
+	width: 350px;
+	top: 130px;
+	padding: 20px;
+	
+	z-index: 2;
+	
+	opacity: 0;
+}
+
+.project-info-text:hover + .project-info{
+	opacity: 1;
+}
+
+.project-info:hover {
+	opacity: 1;
+}
+
+iframe {
+	position: relative;
+	width: 60vw;
+	height: 40vw;
+	margin: left;
+}
+
+/******** Side Projects and Sketches ********/
+
+/**
+
+.side-project {
+	height: 300px;
+	width: 300px;
+	
+	opacity: 1;
+	
+	transition: opacity 2s;
+}
+
+.side-project-title {
+	font-family: Akkurat Pro, sans-serif;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: 13px;
+	text-align: center;
+	
+	padding-top: 150px;
+	
+	position: relative;
+	
+	opacity: 0;
+	
+	transition: opacity 2s, letter-spacing 1s;
+}
+
+.side-project:hover {
+	opacity: 1;
+}
+
+.side-project:hover .project-image-thumbnail {
+	opacity: .1;
+}
+
+.side-project:hover .side-project-title {
+	opacity: 1;
+}
+
+.side-project:hover .side-project-title{
+	letter-spacing: 3px;
+}
+
+**/
+
+.side-project-image {
+	margin: left;
+	width: 50vw;
+	margin: 1vw;
+}
+
+.side-project-image-black-bg {
+	margin: left;
+	width: 50vw;
+	padding:1vw;
+	margin: 1vw;
+	background-color: black;
+}
+
+#side-project-image-container {
+	position: absolute;
+	width: 800px;
+}
+
+/** separating rule **/
+
+.hr {
+	display: block;
+	border: 0;
+	border-top: 1px solid black;
+	margin: 1em 0;
+	padding: 0;
+	width: 100vw;
+}
+
