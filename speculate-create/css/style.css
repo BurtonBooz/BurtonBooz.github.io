@@ -1,0 +1,600 @@
+
+/** HOME PAGE **/
+
+ .grid-container {
+	background-image: url(../images/asset-bg-yellow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+	z-index: 0;
+}
+
+div.link a {
+	margin: 0 auto;
+	position: absolute;
+	padding: 50%;
+}
+
+/** FLOATING SECTIONS **/
+
+#floating-bit1 {
+	position: absolute;
+	background-image: url(../images/asset-passificaiton-suit.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 20vw;
+	height: 40vw;
+	
+	left: 45vw;
+	top: 0vw;
+	
+	z-index: 1;
+}
+
+#floating-bit2 {
+	position: absolute;
+	background-image: url(../images/asset-12.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	width: 30vw;
+	height: 22vw;
+	
+	left: -3vw;
+	top: 34.3vw;
+}
+
+/********* test-squares ***********/
+
+.background-graphic-container {
+	position: absolute;
+	box-sizing: border-box;
+	width: 100vw;
+	
+	z-index: 0;
+}
+
+.test-square-box {
+	position: relative;
+	width: 60vw;
+	height: 30vw;
+	top: 2px;
+	
+	top: 4vw;
+	left: 40vw;
+}
+
+#test-square-1 {
+	position: relative;
+	
+	top: 0vw;
+	left: 30vw;
+	
+	width: 40vw;
+	height: 50vw;
+	
+	background-image: url(../images/asset-passificaiton-suit.png);
+	background-size: contain;
+	
+	z-index: 0;
+	transition: z-index 1s;
+}
+
+.test-square-box:hover .test-square-1{
+	z-index: 1;
+}
+
+
+#test-square-2 {
+	position: relative;
+	
+	bottom: 50vw;
+	left: 3vw;
+	width: 40vw;
+	height: 40vw;
+	
+	background-image: url(../images/asset-heads.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 1;
+	transition: z-index 1s;
+}
+
+.test-square-box:hover .test-square-2{
+	z-index: 0;
+}
+
+/** SECTIONS **/
+
+.item-border-top{
+	width: 100vw;
+	height: 1.5%
+}
+
+.item-grid-box {
+	z-index: 1;
+	position: relative;
+}
+
+/** TITLE **/
+
+.title-outer {
+	width: 60%;
+	z-index: 1;
+}
+
+.title {
+	position: absolute;
+	background-image: url(../images/asset-home-title.svg);
+	/**width: 40%;**/
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 30vw;
+	color: #FFFFFF;
+	
+	font-size: 12vw;
+	opacity: 1;
+	
+	left: 2vw;
+	
+	z-index: 1;
+}
+
+/** ITEM RESPONSE **/
+
+.item-link {
+	margin: 0 auto;
+	width: 50%;
+	height: 80%;
+	position: relative;
+	top: 20px;
+	background-position: center;
+	
+	z-index: 2;
+}
+
+.item-link.asset-1{
+	background-image: url(../images/asset-1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+
+.item-link.asset-2{
+	background-image: url(../images/asset-2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+.item-link.asset-3{
+	background-image: url(../images/asset-3.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+.item-link.asset-4{
+	background-image: url(../images/asset-4.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+.item-link.asset-5{
+	background-image: url(../images/asset-5.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+
+.item-link.asset-6{
+	background-image: url(../images/asset-6.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	z-index: 2;
+}
+
+/** ITEM TITLE (home page) **/
+
+.item-name {
+	margin: 0 auto;
+	text-align: center;
+	font-family: sans-serif;
+	color: #000000;
+	position: relative;
+	width: 20vw;
+	font-size: .8vw;
+	top: 2.4vw;
+	transition: color .5s;
+}
+
+.item-link:hover + .item-name {
+	color: #FFFFFF;
+}
+
+/** INDIVIDUAL PAGE TITLES **/
+
+.ind-title {
+	position: absolute;
+	font-family: "RT Paelzer Grot Medium DEMO", Helvetica, sans-serif;
+	/**width: 40%;**/
+	width: 100vw;
+	height: 20vw;
+	color: #FFFFFF;
+	
+	font-size: 12vw;
+	opacity: 1;
+	
+	left: 2vw;
+	
+	z-index: 1;
+}
+
+.about {
+	top: 30vw;
+	left: 1vw;
+}
+
+.theme {
+	top: 14vw;
+	left: 1vw;
+}
+
+.location-direction{
+	top: 10vw;
+	left: 1vw;
+}
+
+.schedule {
+	top: 14vw;
+	left: 1vw;
+}
+
+.speaker-list {
+	top: 14vw;
+	left: 1vw;
+}
+
+.experience {
+	top: 14vw;
+	left: 1vw;
+}
+
+/** REFRESH BUTTON **/
+
+.refresh-indicator {
+	position: relative;
+	background-image: url(../images/asset-arrow-back.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(90deg);
+	
+	height: 2vw;
+	width: 2vw;
+	
+	top: 5vw;
+	right: -9.4vw;
+	
+	animation: indication 1s infinite;
+}
+
+@keyframes indication {
+	0% {
+		top: 5vw;
+	}
+	
+	50% {
+		top: 5.2vw;
+	}
+	
+	100% {
+		top: 5vw;
+	}
+}
+
+.refresh-button {
+	position: relative;
+	left: 2vw;
+	margin: 0 auto;
+	height: 2vw;
+	width: 2vw;
+}
+
+.refresh-button-size-rotate {
+	position: relative;
+	width: 2vw;
+	height: 2vw;
+	margin:0 auto;
+	display: block;
+}
+
+.refresh-button-size {
+	position: relative;
+	width: 1vw;
+	height: 1vw;
+	margin:0 auto;
+	display: block;
+}
+
+.refresh-arrow-topl {
+	position: relative;
+	left: -.5vw;
+	right: 0vw;
+	bottom: 0vw;
+	
+	transition:  left .3s, bottom .3s;
+	
+	background-image: url(../images/refresh-arrow-topl.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.refresh-arrow-topr {
+	position: relative;
+	left: .5vw;
+	bottom: 1vw;
+	
+	transition: left .3s, bottom .3s;
+	
+	background-image: url(../images/refresh-arrow-topr.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.refresh-arrow-rotate {
+	bottom: 2vw;
+	background-image: url(../images/refresh-arrow-rotate.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	position: relative;
+	transform: rotate(0deg);
+	transition: all 5s;
+}
+
+.refresh-arrow-bottoml {
+	position: relative;
+	left: -.5vw;
+	bottom: 3vw;
+	
+	transition: left .3s, bottom .3s;
+	
+	background-image: url(../images/refresh-arrow-bottoml.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.refresh-arrow-bottomr {
+	position: relative;
+	left: .5vw;
+	bottom: 4vw;
+	
+	transition: left .3s, bottom .3s;
+	
+	background-image: url(../images/refresh-arrow-bottomr.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.refresh-button:hover .refresh-arrow-topl {
+	left: -1.5vw;
+	bottom: .5vw;
+}
+
+.refresh-button:hover .refresh-arrow-topr {
+	left: 1.5vw;
+	bottom: 1.5vw;
+}
+
+.refresh-button:hover .refresh-arrow-bottoml {
+	left: -1.5vw;
+	bottom: 2.5vw;
+}
+
+.refresh-button:hover .refresh-arrow-bottomr {
+	left: 1.5vw;
+	bottom: 3.5vw;
+}
+
+.refresh-button:hover .refresh-arrow-rotate {
+	opacity: 1;
+	transform: rotate(-360deg);
+}
+
+/** MENU **/
+
+#menu {
+	list-style:none;
+	position:relative;
+	margin:0;
+	padding:0
+}
+
+#menu ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#menu ul a {
+	display:block;
+	color:#000000;
+	text-decoration:none;
+	font-size:.8vw;
+	padding:0;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	transition: color .5s;
+}
+
+#menu #arrow {
+	width: 4vw;
+	padding: .5vw;
+}
+
+#menu div.arrow {
+	position: relative;
+	width: 2vw;
+	height:.5vw;
+	left: 1vw;
+	background-image: url(../images/asset-arrow-back.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#menu ul li {
+	position:relative;
+	margin:0;
+	padding:2;
+	background: none;
+	transition: background .5s;
+}
+
+#menu ul li a:hover {
+	color: #ffffff;
+}
+
+#menu ul ul {
+	position:absolute;
+	top:100%;
+	left:0;
+	background:none;
+	padding:0;
+	display: none;
+	transition: display 1s;
+}
+
+#menu ul ul li {
+	float: none;
+	width:15vw;
+}
+
+#menu ul ul a {
+	line-height: 120%;
+	padding:.5vw;
+	padding-left: 1.4vw;
+}
+
+#image ul ul ul {
+	top:0;
+	left:100%
+}
+
+#menu ul li:hover > ul {
+	display: block;
+}
+
+/** SPEAKERS **/
+
+.speakers-dunne-raby {
+	position: relative;
+	top: 2vw;
+	
+	background-image: url(../images/dunne%20&%20raby.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 29vw;
+}
+
+.speakers-benjamin-bratton {
+	position: relative;
+	top: 2vw;
+	
+	background-image: url(../images/Bratton.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 29vw;
+}
+
+.speakers-charlie-brooker {
+	position: relative;
+	top: 2vw;
+	
+	background-image: url(../images/brooker.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 29vw;
+}
+
+/** SPEAKER LINK **/
+
+.speaker-name-link {
+	position: relative;
+	color: #000000;
+	transition: color .5s;
+	z-index: 2;
+}
+
+.speaker-link:hover .speaker-name-link{
+	color: #FFFFFF;
+}
+
+/** PAGE FOOTER **/
+
+.footer {
+	width: 12vw;
+	
+	position: absolute;
+	top: 53vw;
+	left: 44vw;
+}
+
+/** FORMAT TEXT **/
+
+.format-text {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: .8vw;
+	letter-spacing: .02vw;
+	line-height: 1vw;
+	font-weight:500;
+}
+
+.format-text-paragraph {
+	position: relative;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	color: #000000;
+	font-size: 1vw;
+	letter-spacing: .02vw;
+	line-height: 2vw;
+	font-weight:100;
+	text-decoration: none;
+	
+	z-index: 2;
+}
+
+/** BREAKPOINTS **/
+
+
+@media only screen and (max-width: 970px) {
+    .item-name {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .footer {
+        visibility: hidden;
+    }
+}
+

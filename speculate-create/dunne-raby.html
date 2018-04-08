@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Theme Page</title>
+			<link rel="stylesheet" href="css/reset.css">
+			<link rel="stylesheet" href="css/template.css">
+			<link rel="stylesheet" href="css/style.css">
+			
+	</head>
+	<body>
+		<div class="grid-container" id="grid-container">
+	
+		<div class="item-border-top"></div>
+		<div class="item-grid-box">
+				<div class="col-12 height1">	
+					</div>
+					
+					<!-- MENU -->
+					
+					<nav class="col-2" id="menu">
+						<ul>
+							<li><a href="speaker-list.html" id="arrow"><div class="arrow"></div></a>
+								<ul>
+									<li><a href="about.html" class="format-text" style="font-style:italic;">About</a></li>
+									<li><a href="theme.html" class="format-text">Theme</a></li>
+									<li><a href="location-direction.html" class="format-text">Location + Direction</a></li>
+									<li><a href="schedule.html" class="format-text">Schedule</a></li>
+									<li><a href="speaker-list.html" class="format-text">Speaker List</a></li>
+										<ul>
+											<li><a href="" class="format-text">Benjamin Bratton</a></li>
+											<li><a href="" class="format-text">Charlie Brooker</a></li>
+										</ul>
+									<li><a href="experience.html" class="format-text">Experience</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- ROW 1 -->
+
+					<div class="col-5 height3 format-text-paragraph">
+						<p>
+							Anthony Dunne + Fiona Raby <br><br>
+
+							Dunne & Raby use design as a medium to stimulate discussion and debate amongst designers, industry and the public about the social, cultural and ethical implications of existing and emerging technologies.
+
+							Their work has been exhibited at MoMA, NYC, the Pompidou Centre, Paris, and the Design Museum in London, and is in the permanent collections of MoMA, the Victoria and Albert Museum, Frac Ile-de-France, Fnac and the MAK as well as several private collections.
+						</p>
+						
+						<div class="speakers-dunne-raby">
+						</div>
+						
+					</div>
+					
+					<div class="col-offset-5 col-2 footer format-text">
+						Speculate + Create
+					</div>
+		</div>
+		
+	</div>
+		
+	</body>
+	
+		<script type="text/javascript">
+					var imgCount = 4;
+							var dir = 'images/';
+							var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+							var images = new Array
+											images[1] = "asset-bg-darkgrey.svg",
+											images[2] = "asset-bg-lightgrey.svg",
+											images[3] = "asset-bg-pink.svg",
+											images[4] = "asset-bg-yellow.svg",
+							document.getElementById("grid-container").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+		</script>
+
+</html>

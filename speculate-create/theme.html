@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Theme Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="grid-container" id="grid-container">
+		<div class="item-border-top"></div>
+		
+		<div class="col-12 height1">	
+		</div>
+				
+				<!-- MENU -->
+					
+					<nav class="col-2" id="menu">
+						<ul>
+							<li><a href="speculate-create-site.html" id="arrow"><div class="arrow"></div></a>
+								<ul>
+									<li><a href="about.html" class="format-text">About</a></li>
+									<li><a href="theme.html" class="format-text" style="font-style:italic;">Theme</a></li>
+									<li><a href="location-direction.html" class="format-text">Location + Direction</a></li>
+									<li><a href="schedule.html" class="format-text">Schedule</a></li>
+									<li><a href="speaker-list.html" class="format-text">Speaker List</a></li>
+										<ul>
+											<li><a href="" class="format-text">Benjamin Bratton</a></li>
+											<li><a href="" class="format-text">Charlie Brooker</a></li>
+										</ul>
+									<li><a href="experience.html" class="format-text">Experience</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					
+		<div class="col-5 height3 format-text-paragraph">
+			<p style="position:relative;top:20vw;">
+				Taken in its entirety, the world of design typically follows a pattern of market desire and market satisfaction. Trends and developments within the worlds of graphic design, fashion and consumer technology, to name a few, are largely governed by the whims of a commercialized world. 
+
+				Speculative design is a branch of design that focues on the possibilites of the future. It does not aim to be practical, but rather to organize, focus, and above all else, to question the development of the modern world. Speculative design gains its substance from ideas and “what-if” scenarios, and uses these to provoke and stimulate thinking and discussion around the issue of a world spiraling in uncertain directions.
+			</p>
+		</div>			
+		<div class="col-3 height2">
+			<div class="item-link asset-2"></div>
+			
+			<div class="col-offset-5 col-2 footer format-text">
+						Speculate + Create
+			</div>
+		</div>
+		<div class="ind-title theme">THEME</div>
+	</div>
+	
+</body>
+
+	<script type="text/javascript">
+					var imgCount = 4;
+							var dir = 'images/';
+							var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+							var images = new Array
+											images[1] = "asset-bg-darkgrey.svg",
+											images[2] = "asset-bg-lightgrey.svg",
+											images[3] = "asset-bg-pink.svg",
+											images[4] = "asset-bg-yellow.svg",
+							document.getElementById("grid-container").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+			</script>
+
+</html>
