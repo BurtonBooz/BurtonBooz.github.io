@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/template.css">
+    
+    <style>
+			
+			/** TEXT STYLING **/
+			
+			.title {
+				font-family: Ogg;
+				font-size: 6vw;
+				letter-spacing: .5vw;
+				text-align: center;
+				line-height: 4vw;
+			}
+			
+			.title-sub {
+				font-family: Ogg;
+				font-size: 3vw;
+				line-height: 3.2;
+				letter-spacing: 5px;
+				text-align: center;
+			}
+			
+			.subheading-main {
+				font-family: Ogg;
+				font-size: 4.5vw;
+				line-height: 1.9;
+				letter-spacing: .7vw;
+				text-align: left;
+				padding-left: 1vw;
+				
+				position: relative;
+				
+				transition: padding 1s;
+				transition: padding-left 1s;
+			}
+			
+			.subheading-sub {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				padding-left: 1vw;
+			}
+			
+			.subheading-sub-inline {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				
+				position: relative;
+				
+				transition: padding 9s:
+			}
+			
+			.subheading-sub-signatures {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				padding-left: 1vw;
+				padding-right: 1vw;
+			}
+			
+			.subheading-sub-inline-english {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				text-decoration: none;
+			}
+			
+			.body-copy {
+				font-family: Palatino;
+				font-size: .6vw;
+				letter-spacing: .02vw;
+				line-height: .8vw;
+				position: relative;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				margin: 0 auto;
+				
+				position: relative;
+				
+				transition: padding 8s;
+			}
+			
+			.signatures-copy {
+				font-family: Ogg;
+				font-size: 1vw;
+				line-height: 1.5;
+				letter-spacing: .2vw;
+				padding: 5vw;
+			}
+			
+			.signatures-name {
+				font-family: Ogg;
+				font-size: 2.6vw;
+				line-height: 1.5;
+				letter-spacing: .4vw;
+				padding-left: 5vw;
+			}
+			
+			.signatures-state {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				padding-left: 5vw;
+			}
+			
+			/** Amendments **/
+			
+			.subheading-main-amendment {
+				font-family: Ogg;
+				font-size: 5vw;
+				line-height: 1.9;
+				letter-spacing: .7vw;
+				text-align: left;
+				padding: 0vw;
+				padding-left: 1vw;
+				
+				position: relative;
+				
+				transition: padding 2s, padding-left 1s;
+			}
+			
+			.subheading-sub-inline-amendment {
+				font-family: Druk Wide, sans-serif;
+				font-size: .8vw;
+				line-height: 1.9;
+				letter-spacing: .1vw;
+				text-align: left;
+				position: relative;
+				
+				transition: padding 5s;
+			}
+			
+			.body-copy-amendment {
+				font-family: Palatino;
+				font-size: .6vw;
+				letter-spacing: .02vw;
+				line-height: .8vw;
+				position: relative;
+				padding-left: 1vw;
+				padding-right: 1vw;
+				margin: 0 auto;
+				
+				position: relative;
+				
+				transition: line-height 1s, padding 5s, margin 5s;
+			}
+			
+			/** ANIMATION **/
+			
+			/** Transitions **/
+			
+			/** For Articles **/
+			
+			.body-copy:hover {
+				padding: .5vw;
+			}
+			
+			.subheading-main:hover {
+				padding: .2vw;
+				padding-left: 2vw;
+			}
+			
+			.subheading-sub-inline:hover {
+				padding: .5vw;
+			}
+			
+			/** For Amendments **/
+			
+			.body-copy {
+				animation: extend-tracking 20s infinite ease-in
+									/** body-copy-swell 20s infinite ease **/
+									;
+			}
+			
+			.body-copy-amendment {
+				animation: extend-tracking 20s infinite ease-in
+									/** body-copy-swell 20s infinite ease **/
+									;
+			}
+			
+			.body-copy-amendment:hover {
+				line-height: 1vw;
+				padding: 1vw;
+				margin: 2vw;
+			}
+			
+			.subheading-sub-inline-amendment:hover {
+				padding: 1vw;
+			}
+			
+			.subheading-main-amendment:hover {
+				padding: 2vw;
+				padding-left: 6vw;
+			}
+			
+			/** Title **/
+			
+			.title {
+				animation: size-title 11s infinite,
+					extend-title-tracking 11s infinite,
+					extend-title-leading 11s infinite;
+			}
+			
+			@keyframes size-title {
+				0% {
+					font-size: 6vw;
+				}
+				
+				50% {
+					font-size: 6.1vw;
+				}
+				
+				100% {
+					font-size: 6vw;
+				}
+			}
+			
+			@keyframes extend-title-tracking {
+				0% {
+					letter-spacing: .5vw;
+				}
+				
+				50% {
+					letter-spacing: .6vw;
+				}
+				
+				100% {
+					letter-spacing: .5vw;
+				}
+			}
+			
+			//* @keyframes extend-title-leading {
+				0% {
+					line-height: 4vw;
+				}
+				
+				50% {
+					line-height: 4vw;
+				}
+				
+				100% {
+					line-height: 4vw;
+				}
+			} **/
+			
+			/** Sub Heading **/
+			
+			.subheading-sub {
+				animation: extend-tracking-title 10s infinite,
+					subheading-swell 11s infinite;
+			}
+			
+			.subheading-sub-inline {
+				animation: extend-tracking-title 10s infinite,
+					subheading-swell 11s infinite;
+			}
+			
+			.subheading-sub-inline-amendment {
+				animation: extend-tracking-title 10s infinite,
+					subheading-swell 11s infinite;
+			}
+			
+			.subheading-main {
+				animation: extend-tracking-title 12s infinite;
+			}
+			
+			.subheading-main-amendment {
+				animation: extend-tracking-title 12s infinite;
+			}
+			
+			@keyframes extend-tracking-title {
+				0% {
+					letter-spacing: .1vw;
+				}
+				
+				50% {
+					letter-spacing: .20vw;
+				}
+				
+				100% {
+					letter-spacing: .1vw;
+				}
+			}
+			
+			@keyframes subheading-swell {
+				0% {
+					font-size: .8vw;
+				}
+				
+				50% {
+					font-size: .78vw;
+				}
+				
+				100% {
+					font-size: .8vw;
+				}
+			}
+			
+			/** body copy **/
+			
+			
+			@keyframes extend-tracking {
+				0% {
+					letter-spacing: .019vw;
+				}
+				
+				50% {
+					letter-spacing: .021vw;
+				}
+				
+				100% {
+					letter-spacing: .019vw;
+				}
+			}
+			
+			@keyframes  body-copy-swell{
+				0% {
+					font-size: .5vw;
+				}
+				
+				50% {
+					font-size: .51vw;
+				}
+				
+				100% {
+					font-size: .5vw;
+				}
+			}
+
+			/** COMPOSITIONAL ELEMENTS **/
+			
+			.divider {
+				height: 1vw;
+			}
+			
+			.divider-thick {
+				height: 3vw;
+			}
+			
+			.hr {
+				display: block;
+				border: 0;
+				border-top: 1px solid black;
+				margin: 1em 0;
+				margin-left: 1vw;
+				padding: 0;
+			}
+			
+			.hr2 {
+				display: block;
+				border: 0;
+				border-top: 1px solid black;
+				margin: 1em 0;
+				padding: 0;
+			}
+			
+			.bounding-box {
+				border: 1px solid black;
+				padding-bottom: 2vw;
+			}
+			
+			/** STYLING **/
+			
+			a {
+				color: black;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	<body>
+		<div class="grid-container">
+		
+			<div class="col-12 row divider-thick">
+			</div>
+				
+			<div class="row">
+				<div class="col-11"></div>
+				<div class="col-1 divider-thick subheading-sub-inline-english" style="text-align:center"><a href="living-constitution.html">English</a></div>
+			</div>
+				
+			<div class="col-12 divider-thick">
+			</div>
+
+			<div class="col-12 quarter">
+					<p class="title-sub">THE</p>
+					<p class="title">CONSTITUTION</p>
+					<p class="title-sub">OF THE</p>
+					<p class="title">UNITED STATES</p>
+					<p class="title-sub">EN</p>
+					<p class="title">ESPAÑOL</p>
+
+			</div>
+			
+			<div class="row ">
+				<div class="col-12 divider-thick">
+				</div>
+				
+				<div class="row">
+					<p class="subheading-sub" style="padding-top:10vw;">
+						PREMÁBULO
+					</p>
+					<hr class="hr">
+				</div>
+				
+			<div class="col-6">
+				<p class="signatures-copy" style="padding:1vw">
+					NOSOTROS, el Pueblo de los Estados Unidos, a fin de formar una Unión más perfecta, establecer Justicia, asegurar la tranquilidad interior, proveer para la defensa común, promover el bienestar general y asegurar para nosotros y para nuestra prosperidad los beneficios de la Libertad, establecemos y sancionamos esta Constitución para los Estados Unidos de América.
+				</p>
+			</div>
+				
+				<div class="col-9">
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="col-12 divider-thick">
+				</div>
+			</div>
+			
+			<div class="col-12 quarter">
+					<p class="subheading-main">ARTICULO 1</p>	
+			</div>
+			
+			<div class="row bounding-box">
+				<div class="col-3 quarter body-copy">
+					<div class="subheading-sub-inline">SECCIÓN 1</div>
+						
+						<hr class="hr2"/>
+						
+						La Cámara de Representantes estará formada por miembros elegidos cada dos años por el pueblo de los diversos Estados, y los electores deberán poseer en cada Estado las condiciones requeridas para los electores de la rama más numerosa de la legislatura del Estado.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 2</div>
+						
+						<hr class="hr2"/>
+						<br>
+						La Cámara de Representantes estará formada por miembros elegidos cada dos años por el pueblo de los diversos Estados, y los electores deberán poseer en cada Estado las condiciones requeridas para los electores de la rama más numerosa de la legislatura del Estado.
+
+						<br><br>No será Representante ninguna persona que no haya cumplido 25 años de edad y haya sido ciudadano de los Estados Unidos durante siete años, y que no sea habitante del Estado en el cual se le designe, al tiempo de la elección.
+						Los Representantes y los impuestos directos se prorratearán entre los distintos Estados que formen parte de esta Unión, de acuerdo con sus respectivos números, los cuales se determinarán sumando al número total de personas libres, incluyendo las obligadas a prestar servicios durante cierto término de años y excluyendo a los indios no sujetos al pago de impuestos, las tres quintas partes de todas las personas restantes La enumeración en sí deberá efectuarse dentro de los tres años siguientes a la primera sesión del Congreso de los Estados Unidos y en lo sucesivo cada diez años, en la forma establecida por la ley. El número de Representantes no excederá uno por cada treinta mil habitantes con tal que cada Estado cuente con un Representante cuando menos; y hasta que se efectúe dicha enumeración, el Estado de Nueva Hampshire tendrá derecho a elegir tres; Massachussets, ocho; Rhode Island y las Plantaciones de Providencia, uno; Connecticut, cinco; Nueva York, seis; Nueva Jersey, cuatro; Pensilvania, ocho; Delaware, uno; Maryland seis; Virginia, diez; Carolina del Norte, cinco; Carolina del Sur, cinco; y Georgia, tres.
+
+						<br><br>Cuando ocurran vacantes en la representación de cualquier Estado, la autoridad Ejecutiva del mismo expedirá un decreto convocando a elecciones con el objeto de llenarlas.
+						La Cámara de Representantes elegirá su Presidente y demás funcionarios y tendrá la absoluta facultad de presentar cargos en Juicios Políticos.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 3</div>
+						
+						<hr class="hr2"/>
+						
+						<br>El Senado de los Estados Unidos se compondrá de dos Senadores por cada Estado elegidos por seis años por la legislatura del mismo, y cada Senador dispondrá de un voto.
+
+						<br><br>Tan pronto como se hayan reunido en virtud de la elección inicial, se dividirán en tres grupos tan iguales como sea posible. Los escaños de los Senadores del primer grupo quedarán vacantes al terminar el segundo año; las del segundo grupo, al expirar el cuarto año y los del tercer grupo, al concluir el sexto año, de tal manera que sea factible elegir una tercera parte cada dos años; y si ocurren vacantes, por renuncia u otra causa, durante el receso de la legislatura de algún Estado, el Ejecutivo de éste podrá hacer designaciones provisionales hasta el siguiente período de sesiones de la legislatura, la que procederá a cubrir dichas vacantes.
+
+						<br><br>No será Senador ninguna persona que no haya cumplido treinta años de edad y haya sido ciudadano de los Estados Unidos durante nueve años y que, al tiempo de la elección, no sea habitante del Estado por cual fue elegido.
+						El Vicepresidente de los Estados Unidos será Presidente del Senado, pero no tendrá voto excepto en el caso de estar los Senadores igualmente divididos.
+
+						<br><br>El Senado elegirá a sus demás funcionarios, así como un Presidente pro tempore, en ausencia del Vicepresidente o cuando éste se halle desempeñando la presidencia de los Estados Unidos.
+
+						<br><br>El Senado será el único facultado para juzgar Juicios Políticos. Cuando se reúna con este objeto, sus miembros deberán prestar juramento o promesa. Cuando se juzgue al Presidente de los Estados Unidos, deberá presidir el Presidente de la Corte Suprema: y ninguna persona será condenada si no concurre el voto de dos terceras de los miembros presentes.
+						
+						<br><br>El alcance de la sentencia en Juicios Políticos no irá más allá de la destitución del cargo y la inhabilitación para ocupar y disfrutar cualquier cargo honorífico, de confianza o remunerado, que dependa de los Estados Unidos; pero la parte condenada quedará sujeta, no obstante, a que se la acuse, enjuicie, juzgue y castigue de acuerdo con la Ley.
+					</div>
+					
+					<div class="col-3 quarter body-copy">
+					
+						<div class="subheading-sub-inline">SECCIÓN 4</div>
+						
+						<hr class="hr2"/>
+						
+						Los lugares, fechas y modo de celebrar las elecciones para Senadores y Representantes se prescribirán en cada Estado por la legislatura respectiva; pero el Congreso podrá formular o alterar dichas reglas, en cualquier momento, por medio de una ley, excepto en lo que se refiere a los lugares de elección de los Senadores.
+
+						<br><br>El Congreso se reunirá al menos una vez al año, y esta reunión será el primer lunes de diciembre, a no ser que por ley se fije otro día.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 5</div>
+						
+						<hr class="hr2"/>
+
+						<br>Cada Cámara calificará las elecciones, los informes sobre escrutinios y la capacidad legal de sus propios miembros, y una mayoría de cada una constituirá el quórum necesario para sesionar; pero un número menor puede suspender las sesiones de un día para otro y estará autorizado para exigir a los miembros ausentes a que asistan, en el modo y bajo las sanciones que determine cada Cámara.
+
+						<br><br>Cada Cámara puede elaborar su reglamento interno, castigar a sus miembros por comportamiento inapropiado y expulsarlos de su seno con el consentimiento de las dos terceras partes.
+
+						<br><br>Cada Cámara llevará un Diario de sus sesiones y lo publicará de tiempo en tiempo, a excepción de aquellas partes que a su juicio exijan reserva, y los votos afirmativos y negativos de sus miembros con respecto a cualquier pregunta se harán constar en el Diario, a petición de una quinta parte de los presentes.
+
+						<br><br>Durante el período de sesiones del Congreso ninguna de las Cámaras puede suspenderlas por mas de tres días ni acordar que se celebren en lugar diverso de aquel en que se reúnen ambas Cámaras sin el consentimiento de la otra.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 6</div>
+
+						<hr class="hr2"/>
+						
+						<br>Los Senadores y Representantes recibirán por sus servicios una remuneración que será fijada por la ley y pagada por el Tesoro de los Estados Unidos. En todos los casos, exceptuando los de traición, delito grave y perturbación del orden público, gozarán del privilegio de no ser arrestados durante el tiempo que asistan a las sesiones de sus respectivas Cámaras, así como al ir a ellas o regresar de las mismas, y no podrán ser objeto de inquisición alguna con motivo de discusión alguna o debate en una de las Cámaras en ningún otro sitio.
+
+						<br><br>Ningún Senador o Representante será nombrado, durante el tiempo por el cual haya sido elegido, para ocupar cualquier cargo civil que dependa de los Estados Unidos, que haya sido creado o cuya remuneración haya sido aumentada durante dicho tiempo, y ninguna persona que ocupe un cargo público en los Estados Unidos podrá formar parte de las Cámaras mientras continúe en funciones.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 7</div>
+						
+						<hr class="hr2"/>
+						
+						<br>Todo proyecto de ley que tenga por objeto la obtención de ingresos deberá originarse en la Cámara de Representantes; pero el Senado podrá proponer reformas o convenir en ellas de la misma manera que tratándose de otros proyectos.
+
+						<br><br>Todo proyecto aprobado por la Cámara de Representantes y el Senado se presentará al Presidente de los Estados Unidos antes de que se convierta en ley; si él lo aprobare lo firmará; en caso contrario lo devolverá, junto con sus objeciones, a la Cámara en que se haya originado, la cual asentará integras las objeciones en su Diario y procederá a reconsiderarlo. Si después de dicha reconsideración las dos terceras partes de esa Cámara se pusieren de acuerdo en aprobar el proyecto, se remitirá, acompañado de las objeciones, a la otra Cámara, por la cual será, así mismo, reconsiderado, y si lo aprobaren las dos terceras partes de dicha Cámara, se convertirá en Ley. Pero en todos estos casos, la votación de ambas Cámaras será nominal y los nombres de las personas que voten en pro o en contra del proyecto se asentarán en el Diario de cada una de las Cámaras. Si algún proyecto de ley no fuera devuelto por el Presidente dentro de diez días (exceptuando los domingos) después de haberle sido presentado, este se convertirá en Ley, de la misma manera que si lo hubiera firmado, a menos que la suspensión de sesiones del Congreso impidiera su devolución, en cuyo caso no se convertirá en Ley.
+					</div>
+					
+					<div class="col-3 quarter  body-copy">
+						Toda orden, resolución o votación para la cual sea necesaria la concurrencia del Senado y la Cámara de Representantes (salvo en materia de suspensión de las sesiones), se presentará al Presidente de los Estados Unidos; y no tendrá efecto antes de ser aprobada por él, o en el caso de que la rechazare, de ser aprobada nuevamente por dos terceras partes del Senado y de la Cámara de Representantes, de conformidad con las reglas y limitaciones prescritas en el caso de un proyecto de ley.
+
+						<div class="subheading-sub-inline"><br>SECCIÓN 8</div>
+
+						<hr class="hr2"/>
+
+						<br>El Congreso tendrá facultad para: Establecer y recaudar impuestos, aranceles, derechos y contribuciones; para pagar las deudas y proveer a la defensa común y bienestar general de los Estados Unidos; pero todos los impuestos, aranceles, derechos serán uniformes a través de los Estados Unidos.
+
+						<br><br>Contraer empréstitos a cargo al crédito de los Estados Unidos.
+						Regular el comercio con las naciones extranjeras, entre los diferentes Estados y con las tribus indígenas.
+						Establecer un reglamento uniforme de naturalización y leyes uniformes en materia de quiebra a través de los Estados Unidos.
+						Emitir dinero y regular su valor, así como su relación con moneda extranjera. Fijar los patrones de pesas y medidas.
+						Proveer lo necesario para el castigo de quienes falsifiquen los títulos y la moneda vigente de los Estados Unidos.
+						Establecer oficinas de correos y rutas postales
+
+						<br><br>Fomentar el progreso de la Ciencia y las Artes útiles, asegurando a los autores e inventores, por un tiempo limitado, el derecho exclusivo sobre sus respectivos escritos y descubrimientos.
+						Crear tribunales inferiores a la Corte Suprema de Justicia.
+
+						<br><br>Definir y castigar la piratería y otros delitos graves cometidos en alta mar; y violaciones contra la Ley de Naciones.
+						Declarar la guerra, otorgar Cartas de Marcha y Represalia, y dictar reglas con relación a las capturas en mar y tierra.
+						Reclutar y sostener ejércitos, pero ninguna apropiación de fondos con ese destino será por un plazo superior a dos años.
+						Habilitar y mantener una armada.
+						
+						<br><br>Dictar reglas para el gobierno y regulación de las fuerzas navales y terrestres.
+						Disponer cuando debe convocarse a la Reserva Militar con el fin de hacer cumplir las leyes de la Unión, sofocar insurrecciones y rechazar invasiones.
+						
+						<br><br>Proveer lo necesario para organizar, armar y disciplinar a la Reserva Militar, y para regular la parte de esta que se utilice en servicio de los Estados Unidos; reservándose a los Estados correspondientes el nombramiento de los oficiales, y la facultad de entrenar la Reserva Militar conforme a la disciplina prescrita por el Congreso.
+						
+						<br><br>Legislar en forma exclusiva en todo lo referente al Distrito (que no podrá ser más grande que diez millas cuadradas) que, a consecuencia de la cesión de los Estados en que este se encuentre situado, se convierta en sede del gobierno de los Estados Unidos; y aplicar dicha autoridad sobre todos los lugares adquiridos con el consentimiento de la Legislatura del Estado en el cual se encuentre el Distrito, para la construcción de fuertes, almacenes, arsenales, astilleros y otros edificios necesarios. Expedir todas las leyes que sean necesarias y apropiadas para llevar a efecto la ejecución de los poderes anteriores y todos los demás poderes que esta Constitución confiere al gobierno de los Estados Unidos o cualquiera de sus departamentos o funcionarios.
+						
+						<div class="subheading-sub-inline"><br>SECCIÓN 9</div>
+
+						<hr class="hr2"/>
+
+						<br> La inmigración o importación de las personas que cualquiera de los Estados ahora existentes estime oportuno admitir, no podrá ser prohibida por el Congreso, antes del año de mil ochocientos ocho, pero puede imponer sobre dicha importación una contribución o tasa que no exceda diez dólares por cada persona.
+						
+						<br><br>El privilegio del habeas corpus no se suspenderá, salvo cuando la seguridad pública lo exija en casos de rebelión o invasión. No se aprobarán decretos de proscripción ni leyes ex post facto. No se establecerá ningún impuesto directo ni de capitación, como no sea proporcionalmente al censo o enumeración que anteriormente se ordeno practicar. Ningún impuesto o derecho se establecerá sobre los artículos que se exporten de cualquier Estado.
+						
+						<br><br>Los puertos de un Estado no gozarán de preferencia sobre los de ningún otro en virtud de reglamentación alguna mercantil o fiscal; así como tampoco las embarcaciones que se dirijan a un Estado o procedan de él estarán obligadas a ingresar, despachar sus documentos o cubrir derechos en otro Estado.
+					</div>
+
+					<div class="col-3 quarter  body-copy">
+					
+						Ninguna cantidad de dinero podrá extraerse del Tesoro si no es como consecuencia de Asignaciones autorizadas por la ley, y de tiempo en tiempo, deberá publicarse un estado y balance ordenados de los ingresos y gastos del dinero público. Los Estados Unidos no concederán ningún título nobiliario: y ninguna persona que ocupe un cargo remunerado u honorífico que dependa de los Estados Unidos, aceptará ningún regalo, emolumento, cargo o título, sea de la clase que fuere, de cualquier monarca, príncipe o estado extranjero, sin consentimiento del Congreso. 
+					
+						<div class="subheading-sub-inline"><br>SECCIÓN 10</div>
+						
+						<hr class="hr2"/>
+
+						<br>Ningún Estado podrá celebrar Tratado, Alianza o Confederación algunos; otorgar cartas de Marcha y Represalia; emitir moneda, legalizar otro método que no sean monedas de oro y plata como medio de pago de las deudas; aprobar decretos de proscripción, leyes ex post facto, o leyes que menoscaben las obligaciones que derivan de los contratos, ni conceder título nobiliario alguno.
+
+
+						<br><br>Ningún Estado podrá, sin el consentimiento del Congreso, imponer aranceles o derechos sobre las importaciones y exportaciones, excepto lo que fuere absolutamente necesario para el cumplimiento de sus leyes de inspección, y el producto neto de todos los derechos y aranceles que establezcan los Estados sobre las importaciones y exportaciones, será para uso del Tesoro de los Estados Unidos; y todas dichas leyes estarán sujetas a la revisión y control del Congreso.
+
+						<br><br>Sin dicho consentimiento del Congreso ningún Estado podrá establecer derechos de tonelaje, mantener tropas o navíos de guerra en tiempo de paz, celebrar convenio o pacto alguno con otro Estado o con una potencia extranjera, o entrar en Guerra, a menos de ser invadido o de hallarse en peligro tan inminente que no admita demora.
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12 divider-thick">
+					</div>
+				</div>
+			
+				<div class="row bounding-box">
+					
+						<div class="col-12 subheading-main">
+						ARTICULO 2
+						</div>
+						
+						<div class="col-3 body-copy">
+						
+							<div class="subheading-sub-inline">SECCIÓN 1</div>
+							
+							<hr class="hr2"/><br>
+
+							El poder ejecutivo será conferido a un Presidente de los Estados Unidos de América. Él desempeñara su encargo durante un periodo de cuatro años y, junto con el Vicepresidente designado para el mismo período, será elegido como sigue:
+							Cada Estado nombrará, del modo que su legislatura disponga, un número de electores igual al total de los Senadores y Representantes a que el Estado tenga derecho en el Congreso, pero ningún Senador, ni Representante, ni persona que ocupe un cargo honorífico o remunerado que dependa de los Estado Unidos podrá ser designado como elector.
+
+							<br><br>Los electores se reunirán en sus respectivos Estados y elegirán mediante votación secreta entre dos personas, una de las cuales, cuando menos, no deberá ser residente del mismo Estado que ellos. Y formarán una lista de todas las personas por las que hayan votado y del número de votos por cada una; la cual firmarán y certificarán, y remitirán sellada a la Sede del Gobierno de los Estados Unidos, dirigida al Presidente del Senado. El Presidente del Senado abrirá todos los certificados en presencia del Senado y de la Cámara de Representantes, y los votos serán entonces contados. La persona que obtenga el mayor número de votos será el Presidente, siempre que dicho número represente la mayoría de todos los electores nombrado: y si hubiere mas de uno que tenga esa mayoría y que cuente con igual número de votos, entonces la Cámara de Representantes, mediante votación secreta, elegirá a uno de ellos inmediatamente para Presidente; y si ninguna persona tuviere mayoría entonces la referida Cámara elegirá al Presidente de la misma manera entre los cinco nombres con mayor número de votos en la lista. Pero para elegir al Presidente la votación se tomará por Estados, teniendo la representación de cada Estado un voto; para este objeto el quórum consistirá de uno o más miembros de las dos terceras partes de los Estados, y será necesaria una mayoría de todos los Estados para que se tenga por hecha la elección. En todos los casos, y una vez elegido el Presidente, la persona que tenga el mayor número de votos de los Electores será el Vicepresidente. Pero si quedaren dos o más con el mismo número de votos, el Senado escogerá de entre ellos al Vicepresidente, mediante votación secreta.
+						</div>
+						
+						<div class="col-3 body-copy">
+							<br><br>El Congreso podrá fijar la fecha de designación de los Electores, así como el día en que deberán emitir sus votos, el cual deberá ser el mismo en todos los Estados Unidos.
+							
+							<br><br>Ninguna persona que no sea ciudadano por nacimiento o que haya sido ciudadano de los Estados Unidos al tiempo de adoptarse esta Constitución, será elegible para el cargo de Presidente; tampoco será elegible para ese cargo ninguna persona que no haya cumplido treinta y cinco años de edad y que no haya residido catorce años en los Estados Unidos.
+							
+							<br><br>En caso de que el Presidente sea separado de su cargo, de su muerte, renuncia o incapacidad para desempeñar los Poderes y Deberes de dicho Cargo, estos pasarán al Vicepresidente, y el Congreso podrá prever por ley para el caso de separación, muerte, renuncia o incapacidad, tanto del Presidente como del Vicepresidente, y declarar que Funcionario desempeñará como Presidente hasta que desaparezca la causa de incapacidad o se elija un Presidente.
+							
+							<br><br>El Presidente recibirá una remuneración por sus servicios, en las fechas determinadas, la cual no podrá ser aumentada ni disminuida durante el período para el cual él haya sido designado y no podrá recibir durante ese tiempo ningún otro emolumento de parte de los Estados Unidos o de cualquiera de los Estados.
+							
+							<br><br>Antes de comenzar a desempeñar su Cargo prestará el siguiente juramento o promesa: “Juro (o prometo) solemnemente que desempeñaré lealmente el cargo de Presidente de los Estados Unidos y que sostendré, protegeré y defenderé la Constitución de los Estados Unidos, al máximo de mis facultades”.
+							
+						</div>
+						
+						<div class="col-3 body-copy">
+
+							<div class="subheading-sub-inline">SECCIÓN 2</div>
+							
+							<hr class="hr2"/><br>
+							El Presidente será comandante en jefe del Ejército y la Marina de los Estados Unidos y de la Reserva Militar de los diversos Estados, cuando se la llame al servicio activo de los Estados Unidos; podrá solicitar la opinión, por escrito, del funcionario principal de cada uno de los departamentos administrativos con relación a cualquier asunto que se relacione con los deberes de sus respectivos cargos, y estará facultado a suspender la ejecución de sentencias y conceder indultos por delitos contra los Estados Unidos, excepto en los casos de Juicios Políticos.
+
+							<br><br>Él tendrá facultad, por y con el consejo y consentimiento del Senado, para celebrar tratados, con tal que den su anuencia dos terceras partes de los Senadores presentes; y propondrá, y con el consejo y consentimiento del Senado, nombrará a Embajadores, demás Ministros públicos y Cónsules, Magistrados de la Corte Suprema de Justicia y todos los demás funcionarios de los Estados Unidos cuya designación no provea este documento en otra forma y que hayan sido establecidos por ley: pero el Congreso podrá, por Ley, conferir el nombramiento de los funcionarios inferiores que considere convenientes, al Presidente solamente, a los Cortes Judiciales o a los Jefes Departamentales.
+							
+							<br><br>El Presidente tendrá el derecho de cubrir todas las vacantes que ocurran durante el receso del Senado, extendiendo nombramientos provisionales, que terminarán al final del siguiente período de sesiones.
+						</div>
+						
+						<div class="col-3 body-copy">
+							
+							<div class="subheading-sub-inline">SECCIÓN 3</div>
+							
+							<hr class="hr2"/><br>Periódicamente deberá proporcionar al Congreso informes sobre el Estado de la Unión, recomendando a consideración del Congreso, las medidas que él estime necesarias y oportunas; en ocasiones de carácter extraordinario podrá convocar ambas Cámaras o a cualquiera de ellas, y en el supuesto de que discrepen en cuanto a la fecha en que deban entrar en receso, podrá suspender sus sesiones, en la fecha que considere conveniente; recibirá a los Embajadores y otros Ministros públicos; cuidará de que las leyes se ejecuten puntualmente y extenderá los despachos de todos los funcionarios de los Estados Unidos.
+								
+							<div class="subheading-sub-inline"><br>SECCIÓN 4</div>
+							
+							<hr class="hr2"/><br>
+							El Presidente, el Vicepresidente y todos los funcionarios civiles de los Estados Unidos serán separados de sus cargos al ser acusados y declarados culpables en Juicio Político, de traición, cohecho u otros delitos y faltas graves.
+						</div>
+				</div>
+				
+				<div class="divider-thick">
+					
+				</div>
+				
+				<div class="row">
+					<div class="col-6">
+						<div class="col-12 bounding-box">
+							<div class="subheading-main">ARTICULO 3</div>
+							<div class="col-6 body-copy">
+								<div class="subheading-sub-inline">SECCIÓN 1</div>
+								<hr class="hr2"/><br>
+									El poder judicial de los Estados Unidos será depositado en una Corte Suprema y en las Cortes inferiores que el Congreso instituya y establezca en lo sucesivo. Los jueces, tanto de la Corte Suprema como de las Cortes inferiores, continuarán en sus funciones mientras observen buena conducta y recibirán en fechas determinadas, una remuneración por sus servicios que no será disminuida durante el tiempo de su encargo.
+						
+								<div class="subheading-sub-inline"><br>SECCIÓN 2</div>											
+								<hr class="hr2"/><br>
+									El Poder Judicial entenderá en todas las controversias, tanto de derecho como de equidad, que surjan como consecuencia de esta Constitución, de las leyes de los Estados Unidos y de los tratados celebrados o que se celebren bajo la autoridad de los Estados Unidos; - en todas las controversias que se relacionen con Embajadores, otros Ministros públicos y Cónsules; - en todas las controversias de la jurisdicción marítima y de almirantazgo; -en las controversias en que los Estados Unidos sea una parte; -en las controversias entre dos o más Estados; - [entre un Estado y los ciudadanos de otro], -entre ciudadanos de diferentes Estados, -entre ciudadanos del mismo Estado que reclamen tierras en virtud de concesiones de diferentes Estados, y entre un Estado o los ciudadanos del mismo y Estados, ciudadanos o súbditos extranjeros.
+									
+									<br><br>En todos los casos relacionados a Embajadores, otros Ministros públicos y Cónsules, así como en aquellos en que sea parte un Estado, la Corte Suprema poseerá jurisdicción en única instancia. En todos los demás casos que antes se mencionaron la Corte Suprema conocerá en apelación, tanto del derecho como de los hechos, con las excepciones y con arreglo a la reglamentación que formule el Congreso.
+									
+									<br><br>Todos los delitos serán juzgados por medio de un jurado excepto en los casos de Juicio Político; y dicho juicio tendrá lugar en el Estado en que el delito se haya cometido; pero cuando no se haya cometido dentro de los límites de ningún Estado, el juicio se celebrará en el lugar o lugares que el Congreso haya dispuesto por ley.
+							</div>
+							<div class="col-6 body-copy">
+						
+								<div class="subheading-sub-inline">SECCIÓN 3</div>
+								<hr class="hr2"/><br>
+									Traición contra los Estados Unidos consistirá únicamente en declarar guerra en su contra o en unirse a sus enemigos, impartiéndoles ayuda y protección. A ninguna persona se le condenará por traición si no es con base de la declaración de dos testigos que hayan presenciado el mismo acto perpetrado abiertamente o de una confesión en sesión pública ante una Corte.
+								
+								<br><br>El Congreso estará facultado para fijar la pena por traición; pero ninguna condena por traición podrá privar del derecho de transmitir bienes por herencia, ni producirá la confiscación de sus bienes, más allá que en vida de la persona condenada.
+							</div>
+						</div>
+						
+							<div class="col-12 divider-thick">
+							</div>
+							
+							<div class="col-12 bounding-box">
+								<div class="col-12 subheading-main">
+									ARTICULO 4
+								</div>
+								
+								<div class="col-6 body-copy">
+									<div class="subheading-sub-inline">SECCIÓN 1</div>
+									<hr class="hr2"/><br>
+									
+									Se dará completa fe y crédito en cada Estado a las Actas Públicos, Registros y Procedimientos judiciales de todos los demás Estados. Y el Congreso podrá prescribir, mediante leyes generales, la forma en que dichas Actas, Registros y Procedimientos se probarán y el efecto de los mismos.
+
+									<div class="subheading-sub-inline"><br>SECCIÓN 2</div>
+									<hr class="hr2"/>
+
+									<br>Los ciudadanos de cada Estado tendrán derecho a todos los privilegios e inmunidades de los ciudadanos de los demás Estados.
+
+									<br><br>Una persona acusada en cualquier Estado por traición, delito grave u otro crimen, que huya de la justicia y fuere hallada en otro Estado, será entregada, por solicitud de la Autoridad Ejecutiva del Estado del que se haya fugado, con el objeto de que sea conducida al Estado que posea jurisdicción sobre el delito.
+
+									<br><br>Ninguna persona obligada a servir o laborar en un Estado, bajo las leyes de éste, que escape a otro Estado, quedará liberada, a consecuencia de ninguna ley o reglamento de dicho Estado, de dichos servicios o trabajo, sino que serán entregadas al reclamarlo la parte interesada a quien se deba tal servicio o trabajo.
+								</div>
+								
+								<div class="col-6 body-copy">
+									<div class="subheading-sub-inline"><br>SECCIÓN 3</div>
+									<hr class="hr2"/>
+
+									<br>Nueva States may be admitted by the Congress into this Union; but no Nueva State shall be formed or erected within the Jurisdiction of any other State; nor any State be formed by the Junction of two or more States, or Parts of States, without the Consent of the Legislatures of the States concerned as well as of the Congress.
+
+									<br><br>El Congreso tendrá facultad para disponer y formular todos los reglamentos y reglas necesarios con respecto al Territorio y otros bienes que pertenezcan a los Estados Unidos, y ninguna parte de esta Constitución será interpretada de manera que cause perjuicio a los derechos reclamados por los Estados Unidos o por cualquier Estado individual.
+
+									<div class="subheading-sub-inline">SECCIÓN 4</div>
+									<hr class="hr2"/>
+									
+									<br>Los Estados Unidos garantizarán a todo Estado de esta Unión una forma de gobierno republicana, y protegerá a cada uno de ellos en contra de invasiones; y a solicitud de la Legislatura, o del Ejecutivo (en caso de que no fuese posible reunir a la legislatura) contra disturbios internos.
+								</div>
+								
+							</div>
+							
+							<div class="col-12 divider-thick">
+							</div>
+							
+							<div class="col-12 bounding-box">
+								<div class="col-12 subheading-main">
+									ARTICULO 5
+								</div>
+								
+								<div class="col-6 body-copy">
+									Siempre que las dos terceras partes de ambas Cámaras lo juzguen necesario, el Congreso propondrá enmiendas a esta Constitución, o, a solicitud de las legislaturas de las dos terceras de los distintos Estados, convocará una Convención con el objeto de que proponga Enmiendas, las cuales, en cualquier caso, poseerán la misma validez como si fueran parte de esta Constitución, para todo efecto, una vez que hayan sido ratificadas por las legislaturas de las tres cuartas partes de los Estados separadamente o por medio de convenciones reunidas en tres cuartos de los mismos, según el Congreso haya propuesto uno u otro modo para la ratificación; y a condición de que ninguna Enmienda que sea hecha antes del año de mil ochocientos ocho, modifique de manera alguna, las cláusulas primera y cuarta de la Sección Novena del Artículo primero; y que a ningún Estado será privado, sin su consentimiento, de igualdad de voto en el Senado.
+								</div>
+								
+							</div>
+							
+							<div class="col-12 divider-thick">
+							</div>
+							
+							<div class="col-12 bounding-box">
+								<div class="col-12 subheading-main">
+								ARTICULO 6
+								</div>
+								
+								<div class="col-6 body-copy">
+									Todas las deudas contraídas y los compromisos adquiridos antes de la adopción de esta Constitución serán tan válidos en contra de los Estados Unidos bajo esta Constitución, como bajo la Confederación.
+
+									<br><br>Esta Constitución, y las Leyes de los Estados Unidos que se expidan con arreglo a ella; y todos los Tratados celebrados o que se celebren bajo la autoridad de los Estados Unidos, serán la Ley Suprema del país; y los Jueces de cada Estado estarán por lo tanto obligados a observarlos, sin consideración de ningua cosa en contrario en la Constitución o las leyes de cualquier Estado.
+
+									<br><br>Los Senadores y Representantes mencionados, los miembros de las distintas Legislaturas estatales y todos los Funcionarios ejecutivos y judiciales, tanto de los Estados Unidos como de los diversos Estados, se obligarán mediante juramento o promesa a sostener esta Constitución; pero nunca se exigirá una Prueba religiosa como condición para ocupar ningún cargo o mandato público que dependa de los Estados Unidos.
+								</div>
+								
+							</div>
+							
+							<div class="col-12 divider-thick">
+							</div>
+							
+							<div class="col-12 bounding-box">
+								<div class="col-12 subheading-main">
+								ARTICULO 7
+								</div>
+								
+								<div class="col-6 body-copy">
+								La ratificación por las Convenciones de nueve Estados bastará para que esta Constitución entre en vigencia por lo que respecta a los Estados que la ratifiquen.
+
+								</div>
+							
+							</div>
+					</div>	
+<!-------------- SIGNATURES -------------->
+				
+						<div class="col-6">
+								
+							<p class="signatures-copy">
+								Dado en Convención, por consentimiento unánime de los Estados presentes, el día diecisiete de septiembre del año de Nuestro Señor de mil setecientos ochenta y siete, y duodécimo de la Independencia de los Estados Unidos de América. Como testigos de ésta, nosotros firmamos nuestros nombres a continuación,
+							</p>
+						
+							<div class="signatures-name">
+								Go. Washington
+							</div>
+							<div class="signatures-state">
+								Presidente Y Diputado por Virginia
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								John Langdon
+							</div>
+
+							<div class="signatures-name">
+								Nicholas Gilman
+							</div>
+
+							<div class="signatures-state">
+								Nueva Hampshire
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Nathaniel Gorham
+							</div>
+
+							<div class="signatures-name">
+								Rufus King
+							</div>
+
+							<div class="signatures-state">
+								Massachusetts
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Wm. Saml. Johnson
+							</div>
+
+							<div class="signatures-name">
+								Roger Sherman
+							</div>
+
+							<div class="signatures-state">
+								Connecticut
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Alexander Hamilton
+							</div>
+
+							<div class="signatures-state">
+								Nueva York
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Wil: Livingston
+							</div>
+
+							<div class="signatures-name">
+								David Brearley
+							</div>
+
+							<div class="signatures-name">
+								Wm. Paterson
+							</div>
+
+							<div class="signatures-name">
+								Jona. Dayton
+							</div>
+
+							<div class="signatures-state">
+								Nueva Jersey
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+							B. Franklin
+							</div>
+
+							<div class="signatures-name">
+							Robt. Morris
+							</div>
+
+							<div class="signatures-name">
+							Tho: Fitzsimons
+							</div>
+
+							<div class="signatures-name">
+							James Wilson
+							</div>
+
+							<div class="signatures-name">
+							Thomas Mifflin
+							</div>
+
+							<div class="signatures-name">
+							Geo. Clymer
+							</div>
+
+							<div class="signatures-name">
+							Jared Ingersoll
+							</div>
+
+							<div class="signatures-name">
+							Gouv: Morris
+							</div>
+
+							<div class="signatures-state">
+								Pennsylvania
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Geo: Read
+							</div>
+
+							<div class="signatures-name">
+								John Dickinson
+							</div>
+
+							<div class="signatures-name">
+								Jaco: Broom
+							</div>
+
+							<div class="signatures-name">
+								Gunning Bedford,
+								jun’r
+							</div>
+
+							<div class="signatures-name">
+								Richard Bassett
+							</div>
+
+							<div class="signatures-state">
+								Delaware
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								James M’Henry
+							</div>
+
+							<div class="signatures-name">
+								Danl Carroll
+							</div>
+
+							<div class="signatures-name">
+								Dan: of St. Thos. 
+								Jenifer
+							</div>
+
+							<div class="signatures-state">
+								Maryland
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								John Blair
+							</div>
+
+							<div class="signatures-name">
+								James Madison, JR.
+							</div>
+
+							<div class="signatures-state">
+								Virginia
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								Wm. Blount
+							</div>
+
+							<div class="signatures-name">
+								Hu. Williamson
+							</div>
+
+							<div class="signatures-name">
+								Rich’d Dobbs 
+								Spaight
+							</div>
+
+							<div class="signatures-state">
+								Carolina del Norte
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								J. Rutledge
+							</div>
+
+							<div class="signatures-name">
+								Charles Pinckney
+							</div>
+
+							<div class="signatures-name">
+								Charles 
+								Cotesworth 
+								Pinckney
+							</div>
+
+							<div class="signatures-name">
+								Pierce Butler
+							</div>
+
+							<div class="signatures-state">
+								Carolina del Sur
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-name">
+								William Few
+							</div>
+
+							<div class="signatures-name">
+								ABR. Baldwin
+							</div>
+
+							<div class="signatures-state">
+								Georgia
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="col-12 divider-thick">
+							</div>
+
+							<div class="signatures-state">
+								Testifica
+							</div>
+
+							<div class="signatures-name">
+								William Few
+							</div>
+
+							<div class="signatures-state">
+								Secretario
+							</div>
+						</div>
+
+					</div>
+				
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 quarter">
+					<p class="title">ENMIENDAS</p>
+					<p class="title-sub">A LA</p>
+					<p class="title">CONSTITUCIÓN</p>
+					<p class="title-sub">DE LOS</p>
+					<p class="title">ESTADOS UNIDOS</p>
+
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				<div class="col-12 divider-thick"></div>
+				
+								<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA I
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						El Congreso no hará ley alguna con respecto a la adopción de una religión o prohibiendo la libertad de culto; o que coarte la libertad de expresión o de la prensa, o el derecho del pueblo para reunirse pacíficamente, y para solicitar al gobierno la reparación de agravios.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA II
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						Una Reserva Militar bien regulada, siendo necesaria para la seguridad de un Estado Libre, el derecho del pueblo a poseer y portar armas, no será infringido.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA III
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						Ningún militar será, en tiempo de paz alojado en casa alguna, sin el consentimiento del propietario, ni tampoco en tiempo de guerra, como no sea en la forma que prescriba la ley.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA IV
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						El derecho del pueblo a la seguridad que sus personas, domicilios, papeles y efectos se hallen a salvo de pesquisas y aprehensiones arbitrarias, será inviolable, y no se expedirán órdenes, excepto con motivo probable, sustentados mediante juramento o promesa, y expresamente describiendo el lugar que será registrado y las personas o cosas que han de ser detenidas o incautadas.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA V
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						Nadie estará obligado a responder de un delito castigado con la pena capital u otro delito infame, si un Gran Jurado no lo denuncia o acusa, a excepción de los casos que se presenten en las Fuerzas Terrestres o Navales, o en la Reserva Militar nacional cuando se encuentre en servicio activo en tiempo de Guerra o peligro público; ni podrá persona alguna ser puesta dos veces en peligro grave por el mismo delito a; ni será forzada a declarar en su propia contra en ningún juicio criminal; ni se le privará de la vida, libertad o propiedad sin el debido proceso legal; ni se ocupará la propiedad privada para uso público sin una justa indemnización.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA VI
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						En toda causa criminal, el acusado gozará del derecho de ser juzgado pública y expeditamente, por un jurado imparcial del Estado y distrito en que el delito se haya cometido, distrito que habrá sido determinado previamente por la ley; así como de ser informado sobre la naturaleza y causa de la acusación; que se le caree con los testigos en su contra; que se obligue a comparecer a los testigos en su favor y de contar con la ayuda de Accesoria Legal para su defensa.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA VII
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						En los juicios de derecho consuetudinario, en que el valor que se discuta exceda de veinte dólares, el derecho a juicio ante un jurado será garantizado, y ningún hecho que haya conocido un jurado será reexaminado en Corte alguna de los Estados Unidos, como no sea con arreglo a las normas del derecho consuetudinario.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA VIII
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						No se exigirán fianzas excesivas, ni se impondrán multas excesivas, ni se infligirán castigos crueles e inusuales.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA IX
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						La enumeración en la Constitución, de ciertos derechos no ha de interpretarse para negar o menosprecia otros que mantiene el pueblo.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA X
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						Los poderes no delegados a los Estados Unidos por la Constitución, ni prohibidos por esta a los Estados, están reservados a los Estados respectivamente, o al pueblo.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XI
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en febrero 7 de 1795
+						<hr class="hr2"/>
+					</div> 
+					
+					<div class="col-3 body-copy-amendment">
+						El poder judicial de los Estados Unidos no debe interpretarse que se extiende a cualquier litigio de derecho o de equidad que se inicie o prosiga contra uno de los Estados Unidos por ciudadanos de otro Estado o por ciudadanos o súbditos de un Estado extranjero.
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XII
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en junio 15 de 1804
+						<hr class="hr2"/>
+					</div> 
+					
+					<div class="col-3 body-copy-amendment">
+						Los electores se reunirán en sus respectivos Estados y elegirán mediante votación secreta al Presidente y Vicepresidente, uno de los cuales, al menos, no será residente del mismo Estado que ellos; en sus papeletas indicarán la persona a favor de la cual votan para Presidente y en papeletas diferentes la persona que eligen para Vicepresidente, y formarán listas separadas de todas las personas que reciban votos para Presidente y de todas las personas que reciban votos para Vicepresidente y del número de votos que corresponda a cada una, y firmarán y certificarán las referidas listas y las remitirán selladas a la sede de gobierno de los Estados Unidos, dirigidas al Presidente del Senado; -El Presidente del Senado abrirá todos los certificados en presencia del Senado y de la Cámara de Representantes, y los votos serán contados; -La persona que tenga el mayor número de votos para Presidente se convertirá en Presidente, siempre que dicho número represente la mayoría de todos los electores nombrados; y si ninguna persona tiene mayoría, entonces de entre las tres personas que tengan el mayor número de votos para Presidente, la Cámara de Representantes, mediante voto secreto, escogerá inmediatamente al Presidente. Debe tenerse presente que al elegir al Presidente la votación se hará por Estados y que la representación de cada Estado gozará de un voto; que para este objeto habrá quórum cuando estén presentes uno o más miembros que representen a las dos terceras partes de los Estados y que será necesaria mayoría de todos los Estados para una elección. (Y si la Cámara de Representantes no eligiere Presidente, en los casos en que pase a ella el derecho de escogerlo, antes del día cuatro de marzo inmediato siguiente, entonces el Vicepresidente actuará como Presidente, de la misma manera que en el caso de muerte o de otro impedimento constitucional del Presidente--) La persona que obtenga el mayor número de votos para Vicepresidente será Vicepresidente, siempre que dicho número represente la mayoría de todos los electores nombrados, y si ninguna persona reúne la mayoría, entonces el Senado escogerá al Vicepresidente entre las dos con mayor cantidad de votos que figuren en la lista; para este objeto habrá quórum con las dos terceras partes del número total de Senadores y será necesaria la mayoría del número total para una elección. Pero ninguna persona inelegible para el cargo de Presidente con arreglo a la Constitución será elegible para el de Vicepresidente de los Estados Unidos.
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XIII
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en diciembre 6, 1865
+						<hr class="hr2"/>
+					</div> 
+					
+				
+					<div class="col-3 body-copy-amendment">
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+							Ni esclavitud ni trabajo forzado, excepto como castigo de un delito del que el responsable haya sido debidamente condenado, existirá dentro de los Estados Unidos ni en ningún lugar sujeto a su jurisdicción.
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+							El Congreso estará facultado para hacer cumplir este artículo por medio de leyes apropiadas.
+
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XIV
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en julio 9, 1868
+						<hr class="hr2"/>
+					</div> 
+					
+				
+					<div class="col-3 body-copy-amendment">
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+							Todas las personas nacidas o naturalizadas en los Estados Unidos y sometidas a su jurisdicción son ciudadanos de los Estados Unidos y del Estado en que residen. Ningún Estado podrá dictar ni imponer ley alguna que limite los privilegios o inmunidades de los ciudadanos de los Estados Unidos; ni podrá Estado alguno privar a cualquier persona de la vida, libertad o propiedad sin el debido proceso legal; ni negar a cualquier persona que se encuentre bajo su jurisdicción igual protección de las leyes.
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+							Los Representantes se distribuirán proporcionalmente entre los diversos Estados de acuerdo con su respectiva población, en la que se tomará en cuenta el número total de personas en cada Estado, con excepción de los Indígenas que no paguen impuestos. Pero cuando el derecho a votar en elección alguna para escoger los electores para Presidente y Vicepresidente de los Estados Unidos, a los Representantes del Congreso, a los funcionarios ejecutivos y judiciales de un Estado o a los miembros de su legislatura es negado a cualquiera de los habitantes varones de dicho Estado, que tengan veintiún años de edad y sean ciudadanos de los Estados Unidos, o de cualquier manera disminuida, excepto con motivo de su participación en una rebelión o en algún otro delito, la base de la representación de dicho Estado se reducirá en la misma proporción que el número de dichos ciudadanos varones tenga con el número total de ciudadanos varones de veintiún años en este Estado.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						<div class="subheading-sub-inline-amendment">SECCIÓN 3</div>
+						
+						<hr class="hr2"/>
+						
+							No podrá ser Senador o Representante del Congreso, o elector para Presidente y Vicepresidente, u ocupar ningún cargo civil ni militar, que dependa de los Estados Unidos, o de cualquiera de los Estados, ninguna persona que, habiendo previamente prestado juramento como miembro del Congreso, o como funcionarios de los Estados Unidos, o como miembros de cualquier legislatura estatal, o como funcionarios ejecutivos o judiciales de cualquier Estado, de que soportarían la Constitución de los Estados Unidos, haya participado de una insurrección o rebelión en contra de los mismos, o haya proporcionando ayuda o protección a sus enemigos. Pero el Congreso puede derogar tal interdicción por el voto de las dos terceras partes de cada Cámara.
+
+						<div class="subheading-sub-inline-amendment">SECCIÓN 4</div>
+						
+						<hr class="hr2"/>
+					
+							La validez de la deuda pública de los Estados Unidos, que este autorizada por la ley, incluyendo las deudas contraídas para el pago de pensiones y recompensas por servicios prestados al sofocar insurrecciones o rebeliones, será incuestionable. Pero ni los Estados Unidos ni ningún Estado asumirán ni pagarán deuda u obligación alguna contraídas en ayuda de insurrecciones o rebeliones contra los Estados Unidos, como tampoco reclamación alguna con motivo de la pérdida o emancipación de esclavos, pues todas las deudas, obligaciones y reclamaciones de esa especie se considerarán ilegales y nulas.
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 5</div>
+
+						<hr class="hr2"/>
+							El Congreso tendrá facultades para hacer cumplir las disposiciones de este artículo por medio de leyes apropiadas.
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XV
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en febrero 3, 1870
+						<hr class="hr2"/>
+					</div> 
+				
+					<div class="col-3 body-copy-amendment">
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+							El derecho de los ciudadanos de los Estados Unidos al voto no será negado o menoscabado por los Estados Unidos, ni por ningún Estado, por motivos de raza, color o anterior condición de esclavitud. 
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2 
+						</div> 
+						
+						<hr class="hr2"/>
+
+							El Congreso estará facultado para hacer cumplir este artículo mediante leyes apropiadas.
+							
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XVI
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en febrero 3, 1913
+						
+						<br><br>Nota: la sección 9 del Artículo I de la Constitución, fue modificada por la Enmienda XVI
+
+						<hr class="hr2"/>
+					</div> 
+					
+				
+					<div class="col-3 body-copy-amendment">
+						El Congreso tendrá facultades para establecer y recaudar impuestos sobre los ingresos, sea cual fuere la fuente de que provengan, sin prorratearlos entre los diferentes Estados y sin tomar en consideración ningún censo o enumeración.
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+					<div class="subheading-main-amendment">
+						ENMIENDA XVII
+					</div>
+					<div class="subheading-sub-signatures">
+						Ratificada en abril 8, 1913
+						<br><br>la sección 3 del Artículo I de la Constitución, fue modificada por la Enmienda XVII
+						<hr class="hr2"/>
+					</div> 
+					
+				
+					<div class="col-3 body-copy-amendment">
+						El Senado de los Estados Unidos se compondrá de dos Senadores por cada Estado, elegidos por los habitantes del mismo por seis años; y cada Senador tendrá un voto. Los electores de cada Estado deberán poseer las condiciones requeridas para los electores de la rama más numerosa de la legislatura del Estado.
+
+						<br><br>Cuando ocurran vacantes en la representación de cualquier Estado en el Senado, la autoridad Ejecutiva de aquel Estado convocará a elecciones para cubrir dichas vacantes: Estipulado, que la legislatura de cualquier Estado puede autorizar a su Ejecutivo a hacer un nombramiento provisional hasta que las vacantes sean cubiertas mediante elecciones en la forma que disponga la legislatura.
+
+						<br><br>Esta enmienda no será interpretada para afectar la elección o período de cualquier Senador elegido antes de que adquiera validez como parte integrante de la Constitución.
+
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XVIII
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en enero 16, 1919. Derogada por la Enmienda XXI
+						
+						<hr class="hr2"/>
+						
+					</div> 
+					
+					<div class="col-3 body-copy-amendment">
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1 
+						</div> 
+						
+						<hr class="hr2"/>
+						
+						Un año después de la ratificación de este artículo quedará prohibida por la presente, la fabricación, venta o transportación de licores embriagantes dentro de los Estados Unidos y de todos los territorios sometidos a su jurisdicción, así como su importación a los mismos o su exportación de ellos, con el propósito de usarlos como bebidas.
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2 
+						</div> 
+						
+						<hr class="hr2"/>
+						El Congreso y los diversos Estados poseerán facultades concurrentes para hacer cumplir este artículo mediante leyes apropiadas.
+					</div>
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 3</div>
+						
+						<hr class="hr2"/>
+
+							Este artículo no entrará en vigor a menos que sea ratificado con el carácter de enmienda a la Constitución por las legislaturas de los distintos Estados en la forma prevista por la Constitución y dentro de los siete años siguientes a la fecha en que el Congreso lo someta a los Estados.
+					</div>
+					
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XIX
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en agosto 18, 1920
+					
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+						El derecho de los ciudadanos de los Estados Unidos al voto no será negado o menoscabado por los Estados Unidos, ni por ningún Estado, por motivos de sexo.
+						
+						<br><br>El Congreso estará facultado para hacer cumplir este artículo por medio de leyes apropiadas.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XX
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en enero 23, 1933
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+
+						Los períodos del Presidente y el Vicepresidente terminarán al medio día del veinte de enero, y los períodos de los Senadores y Representantes al medio día del tres de enero, de los años en que dichos períodos habrían terminado si este artículo no hubiera sido ratificado, y en ese momento iniciarán los períodos de sus sucesores.
+
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+						El Congreso se reunirá, cuando menos, una vez cada año y dicho período de sesiones se iniciará al mediodía del tres de enero, a no ser que por medio de una ley fije una fecha diferente.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 3</div>
+						<hr class="hr2"/>
+
+						Si al momento fijado para el comienzo del período presidencial, el Presidente electo hubiera muerto, el Vicepresidente electo se convertirá en Presidente. Si no se hubiere elegido un Presidente antes del momento fijado para el comienzo de su período, o si el Presidente electo no calificare, entonces el Vicepresidente electo desempeñará como Presidente, hasta que el Presidente haya calificado; y el Congreso podrá prever por medio de una ley para el caso de que ni el Presidente electo ni el Vicepresidente electo calificaren, declarando quien hará las veces de Presidente en ese supuesto, o la forma en que se escogerá a la persona que habrá de actuar como tal, y la referida persona actuará con ese carácter hasta un Presidente o un Vicepresidente haya calificado.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 4</div>
+						<hr class="hr2"/>
+						
+						El Congreso podrá prever mediante una ley para el caso que muera cualquiera de las personas de entre las cuales la Cámara de Representantes podrá para elegir un Presidente cuando el derecho de elección le haya sido delegado, así como el caso de que muera alguna de las personas entre las cuales el Senado está facultado para escoger Vicepresidente cuando el derecho de elección le haya sido delegado.
+
+						<div class="subheading-sub-inline-amendment">SECCIÓN 5</div>
+						<hr class="hr2"/>
+
+						Las secciones 1 y 2 entrarán en vigor el día quince de octubre siguiente a la ratificación de este artículo.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+						<div class="subheading-sub-inline-amendment">SECCIÓN 6</div>
+						<hr class="hr2"/>
+						Este artículo quedará sin efecto a menos que sea ratificado como Enmienda a la Constitución por las legislaturas de las tres cuartas partes de los distintos Estados, dentro de los siete años posteriores a la fecha de su sumisión.
+
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXI
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en diciembre 5, 1933
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+
+							Queda derogado por el presente el decimoctavo artículo de enmienda a la Constitución de los Estados Unidos.
+
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+						Se prohíbe por el presente la transportación o importación de licores intoxicantes a cualquier Estado, Territorio o posesión de los Estados Unidos, para ser entregados o utilizados en su interior con violación de sus respectivas leyes.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 3</div>
+						<hr class="hr2"/>
+						Este artículo quedará sin efecto a menos que sea ratificado como enmienda a la Constitución por convenciones en los diversos Estados, en la forma prevista por la Constitución, dentro de los siete años siguientes a la fecha en que el Congreso lo someta a los Estados.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXII
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en febrero 27, 1951
+					
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+
+						Ninguna persona sera elegida para el cargo de Presidente más de dos veces, y ninguna persona que haya desempeñado dicho cargo o que haya actuado como Presidente durante más de dos años de un período para el que se haya elegido a otra persona como Presidente, será elegida para el cargo de Presidente más de una vez. Pero el presente artículo no se aplicará a ninguna persona que ocupe el cargo de Presidente cuando este artículo fue propuesto por el Congreso, ni impedirá que la persona que desempeñe dicho cargo o que actúe como Presidente, durante el período en que el repetido artículo entre en vigor, desempeñe el puesto de Presidente o actúe como tal durante el resto del referido período.
+
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+						Este artículo quedará sin efecto a menos que las legislaturas de tres cuartas partes de los diversos Estados lo ratifiquen como enmienda a la Constitución dentro de los siete años siguientes a la fecha en que el Congreso los someta a los Estados.
+
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXIII
+					</div>
+					
+					<div class="subheading-sub-signatures">Ratificada en marzo 29, 1961
+					
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+						El distrito que constituya la Sede del Gobierno de los Estados Unidos nombrará, según disponga el Congreso: Un número de electores para elegir al Presidente y al Vicepresidente, igual al número total de Senadores y Representantes ante el Congreso al que el Distrito tuviera derecho si fuere un Estado, pero en ningún caso será dicho número mayor que el del Estado de menos población; estos electores se sumarán al número de aquellos electores nombrados por los Estados, pero para fines de la elección del Presidente y del Vicepresidente, serán considerados como electores nombrados por un Estado; y celebrarán sus reuniones en el Distrito y cumplirán con los deberes que se estipulan en la Enmienda XII.
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+							El Congreso queda facultado para poner en vigor este artículo por medio de legislación adecuada.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXIV
+					</div>
+					
+					<div class="subheading-sub-signatures">
+					Ratificada en enero 23, 1964
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+						El derecho de los ciudadanos de los Estados Unidos a votar en cualquier elección primaria u otra elección para Presidente o Vicepresidente, para electores para Presidente o Vicepresidente, o para Senador o Representante ante el Congreso, no sera negado o coartado por los Estados Unidos ni Estado alguno por motivo de no haber pagado un impuesto electoral o cualquier otro impuesto.
+						
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+						
+							El Congreso queda facultado para poner en vigor este artículo por medio de legislación adecuada.
+
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXV
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en febrero 10, 1967
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+						En caso de que el Presidente sea depuesto de su cargo, o de su muerte o renuncia, el Vicepresidente se convertirá en Presidente.
+
+						<div class="subheading-sub-inline-amendment"><br>SECCIÓN 2</div>
+						<hr class="hr2"/>
+						
+						Cuando el puesto de Vicepresidente estuviera vacante, el Presidente nombrará un Vicepresidente que tomará posesión de su cargo luego de ser confirmado por voto mayoritario de ambas Cámaras del Congreso.
+
+						<div class="subheading-sub-inline-amendment"><br>SECCIÓN 3</div>
+						<hr class="hr2"/>
+						Cuando el Presidente transmitiera al Presidente pro tempore del Senado y al Presidente de la Cámara de Representantes su declaración escrita de que está imposibilitado de desempeñar los derechos y deberes de su cargo, y mientras no transmitiera a ellos una declaración escrita en sentido contrario, tales derechos y deberes serán desempeñados por el Vicepresidente como Presidente interino.
+						
+					</div>
+					
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 4</div>
+						<hr class="hr2"/>
+						
+						Cuando el Vicepresidente y una mayoría de los principales funcionarios de los departamentos ejecutivos o de cualquier otra organización que el Congreso autorizara por ley, trasmitieran al Presidente pro tempore del Senado y al Presidente de la Cámara de Representantes su declaración escrita de que el Presidente esta imposibilitado de ejercer los derechos y deberes de su cargo, el Vicepresidente asumirá inmediatamente los derechos y deberes del cargo como Presidente interino.
+						<br><br>
+
+						Cuando más tarde el Presidente transmitiera al Presidente pro tempore del Senado y al Presidente la Cámara de Representantes su declaración escrita que no existe imposibilidad alguna, él asumirá de nuevo los derechos y deberes de su cargo, a menos que el Vicepresidente y una mayoría de los funcionarios principales de los departamentos ejecutivos o de cualquier otra organización que el Congreso haya autorizado, por ley transmitieran en el término de cuatro días al Presidente pro tempore del Senado y al Presidente la Cámara de Representantes su declaración escrita de que el Presidente está imposibilitado de ejercer los derechos y deberes de su cargo. En este caso, el Congreso decidirá la solución a adoptarse, para lo cual se reunirá en el término de cuarenta y ocho horas, si no estuviera en sesión. Sí el Congreso, en el término de veintiún días de recibida la ulterior declaración escrita o, de no estar en sesión, dentro de los veintiún días de haber sido convocado a reunirse, determinará por voto de las dos terceras partes de ambas Cámaras que el Presidente está imposibilitado de ejercer los derechos y deberes de su cargo, el Vicepresidente continuará desempeñando el cargo como Presidente interino; caso contrario, el Presidente reanudará los derechos y deberes de su cargo.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXVI
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en julio 1, 1971
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+					
+						<div class="subheading-sub-inline-amendment">SECCIÓN 1</div>
+						<hr class="hr2"/>
+						El derecho a votar, de los ciudadanos de los Estado Unidos mayores de dieciocho años de edad, no será negado o reducido ni por los Estados Unidos ni por Estado alguno a causa de la edad.
+						
+						<div class="subheading-sub-inline-amendment">SECCIÓN 2</div>
+						<hr class="hr2"/>
+						
+						El Congreso tendrá poder para hacer valer este artículo mediante la legislación adecuada.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-12 bounding-box">
+				
+					<div class="subheading-main-amendment">
+						ENMIENDA XXVII
+					</div>
+					
+					<div class="subheading-sub-signatures">
+						Ratificada en mayo 7, 1992
+						<hr class="hr2"/>
+					
+					</div>
+
+					<div class="col-3 body-copy-amendment">
+						Ninguna ley que varíe la remuneración de los servicios de los Senadores y Representantes tendrá efecto hasta después de que se haya realizado una elección de Representantes.
+					</div>
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+				
+				<div class="col-3 body-copy-amendment">
+					TYPESETTING & DESIGN – BURTON BOOZ
+				</div>
+				
+				<div class="col-12 divider-thick"></div>
+		</div>
+	</body>
+</html>
