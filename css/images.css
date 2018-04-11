@@ -1,7 +1,7 @@
 /**** project thumbnail images - main page ******/
 
 #seveneves-title-sequence {
-	background-image: url(images/seveneves-title-sequence/seveneves-titles-9.jpg);
+	background-image: url(images/seveneves-title-sequence/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -9,7 +9,7 @@
 }
 
 #terra-sizzle-reel {
-	background-image: url(images/terra-sizzle-reel/terra-sizzle-1.jpg);
+	background-image: url(images/terra-sizzle-reel/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -33,7 +33,7 @@
 }
 
 #where-will-i-go {
-	background-image: url(images/where-will-i-go/bg.png);
+	background-image: url(images/where-will-i-go/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
