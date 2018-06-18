@@ -24,14 +24,14 @@ a {
 
 @font-face {
 	font-family: 'CothamSans';
-	src: url('font/CothamSans.otf'), format('opentype');
+	src: url('../burtonbooz.github.io/css/font/CothamSans.otf'), format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'LibreBaskerville-Regular';
-	src: url('font/LibreBaskerville-Regular.otf'), format('opentype');
+	src: url('../burtonbooz.github.io/css/font/LibreBaskerville-Regular.otf'), format('opentype');
 	font-weight: thin;
 	font-style: normal;
 }
