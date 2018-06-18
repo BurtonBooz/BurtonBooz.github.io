@@ -224,7 +224,7 @@ a:active {
 /** Projects – Project Page **/
 
 .header-text-project {
-	font-family: sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 2px;
 	font-size: 13px;
 	font-weight: 800;
@@ -247,7 +247,7 @@ a:active {
 
 .project-info-text {
 	font-family: CothamSans, sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: .5px;
 	font-size: 13px;
 	font-weight: 400;
 	text-align: left;
