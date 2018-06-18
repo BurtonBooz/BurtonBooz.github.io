@@ -106,6 +106,7 @@
 	.project-info-text {
 		font-size: 10px;
 		letter-spacing: 1px;
+		line-height: 17px;
 	}
 	
 	/** side-projects **/
@@ -178,8 +179,9 @@
 	}
 	
 	.project-info-text {
-		font-size: 10px;
-		letter-spacing: 1px;
+		font-size: 7px;
+		letter-spacing: 0.5px;
+		line-height: 14px;
 	}
 	
 	/** side-projects **/

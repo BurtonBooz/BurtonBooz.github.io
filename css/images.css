@@ -511,24 +511,49 @@
 /************************************************************************************/
 
 /**** SIDE PROEJECT IMAGES ****/
+/** Weird Dog **/
 
-/** face-sketch ***/
+.weird-dog {
+	background-image: url(images/side-projects/weird-dog/weird-dog.jpg);
+}
+
+/** Apathetic Gaze **/
+
+.apathetic-gaze {
+	background-image: url(images/side-projects/an-apathetic-gaze/apathetic-gaze.jpg);
+}
+
+.apathetic-gaze-color {
+	background-image: url(images/side-projects/an-apathetic-gaze/apathetic-gaze-color.jpg);
+}
+
+/** Steeze Screen **/
 
 .steezeman-1 {
-	background-image: url(images/side-projects/Steezman/Steezeman-gif1.gif)
+	background-image: url(images/side-projects/Steezman/Steezeman-gif1.gif);
 }
 
 .steezeman-2 {
-	background-image: url(images/side-projects/Steezman/Steezeman-gif2.gif)
+	background-image: url(images/side-projects/Steezman/Steezeman-gif2.gif);
 }
 
+/** Contemplate The Void **/
+
+.contemplate-the-void {
+	background-image: url(images/side-projects/contemplate-the-void/contemplate-the-void.gif);
+}
+
+/** Grass Boy **/
+
 .grass-boy{
-	background-image: url(images/side-projects/grass-boy/grass-boy.jpg)
+	background-image: url(images/side-projects/grass-boy/grass-boy.jpg);
 }
 
 .grass-boy2{
-	background-image: url(images/side-projects/grass-boy/grass-boy2.jpg)
+	background-image: url(images/side-projects/grass-boy/grass-boy2.jpg);
 }
+
+/** face-sketch ***/
 
 .face-sketch {
 	background-image: url(images/side-projects/face-sketch/face-sketch.jpg)

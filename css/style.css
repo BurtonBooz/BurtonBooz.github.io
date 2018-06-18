@@ -20,6 +20,22 @@ a {
 	font-style: italic;
 }
 
+/** Website Fonts **/
+
+@font-face {
+	font-family: 'CothamSans';
+	src: url('font/CothamSans.otf'), format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LibreBaskerville-Regular';
+	src: url('font/LibreBaskerville-Regular.otf'), format('opentype');
+	font-weight: thin;
+	font-style: normal;
+}
+
 /** HEADER **/
 
 #header-bar-bg {
@@ -45,7 +61,7 @@ a {
 }
 
 #burtonbooz-text {
-	font-family: sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1.5px;
 	font-size: 11px;
 	font-weight: 400;
@@ -57,7 +73,7 @@ a {
 }
 
 .header-text {
-	font-family: sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1.5px;
 	font-size: 13px;
 	font-weight: 400;
@@ -165,7 +181,7 @@ a:active {
 }
 
 .project-title {
-	font-family: Akkurat Pro, sans-serif;
+	font-family: LibreBaskerville-Regular, sans-serif;
 	font-weight: 900;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -222,7 +238,7 @@ a:active {
 }
 
 .project-header-text {
-	font-family: sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1.5px;
 	font-size: 13px;
 	font-weight: 800;
@@ -230,7 +246,7 @@ a:active {
 }
 
 .project-info-text {
-	font-family: sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1px;
 	font-size: 13px;
 	font-weight: 400;
@@ -246,9 +262,14 @@ a:active {
 
 .project-image {
 	margin: left;
-	width: 60vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
+	
+	
+	width: 70vw;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/** width: 60vw; **/
+	/** padding-top: 1vw;
+	padding-bottom: 1vw; **/
 }
 
 #project-image-buffer {
@@ -259,6 +280,10 @@ a:active {
 	position: absolute;
 	width: 800px;
 	padding-left: 30px;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .project-info-box {
@@ -361,6 +386,10 @@ iframe {
 #side-project-image-container {
 	position: absolute;
 	width: 800px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /** separating rule **/
