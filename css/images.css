@@ -1,7 +1,7 @@
 /**** project thumbnail images - main page ******/
 
 #seveneves-title-sequence {
-	background-image: url(images/seveneves-title-sequence/bg.jpg);
+	background-image: url(images/seveneves-title-sequence/bg.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -9,7 +9,7 @@
 }
 
 #terra-sizzle-reel {
-	background-image: url(images/terra-sizzle-reel/bg.jpg);
+	background-image: url(images/terra-sizzle-reel/bg.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -33,7 +33,7 @@
 }
 
 #where-will-i-go {
-	background-image: url(images/where-will-i-go/bg.jpg);
+	background-image: url(images/where-will-i-go/bg.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -246,7 +246,7 @@
 	background-position: left;
 	overflow:hidden;
 	
-	height: 50vw;
+	height: 500px;
 }
 
 .project-image-format-wide {
@@ -318,18 +318,26 @@
 /**** PROJECT: WHERE WILL I GO ****/
 
 .where-will-i-go-1 {
-	background-image: url(images/various-posters/where-will-i-go-1.jpg);
+	background-image: url(images/where-will-i-go/where-will-i-go-1.jpg);
 }
 
 .where-will-i-go-2 {
-	background-image: url(images/various-posters/where-will-i-go-2.jpg);
+	background-image: url(images/where-will-i-go/where-will-i-go-2.jpg);
 }
 .where-will-i-go-3 {
-	background-image: url(images/various-posters/where-will-i-go-3.jpg);
+	background-image: url(images/where-will-i-go/where-will-i-go-3.jpg);
 }
 
 .where-will-i-go-4 {
-	background-image: url(images/various-posters/where-will-i-go-4.jpg);
+	background-image: url(images/where-will-i-go/where-will-i-go-4.jpg);
+}
+
+.where-will-i-go-4 {
+	background-image: url(images/where-will-i-go/where-will-i-go-5.jpg);
+}
+
+.where-will-i-go-4 {
+	background-image: url(images/where-will-i-go/where-will-i-go-6.jpg);
 }
 
 /**** PROJECT: URBAN GROW ****/

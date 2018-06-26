@@ -371,8 +371,7 @@ iframe {
 
 .side-project-image {
 	margin: left;
-	width: 50vw;
-	margin: 1vw;
+	margin: 2px;
 }
 
 .side-project-image-black-bg {
@@ -385,7 +384,7 @@ iframe {
 
 #side-project-image-container {
 	position: absolute;
-	width: 800px;
+	width: 100vw;
 	
 	display: flex;
 	flex-direction: column;
