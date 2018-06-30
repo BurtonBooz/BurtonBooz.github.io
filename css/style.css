@@ -61,20 +61,20 @@ a {
 }
 
 #burtonbooz-text {
-	font-family: CothamSans, sans-serif;
-	letter-spacing: 1.5px;
+	font-family: LibreBaskerville-Regular, sans-serif;
+	letter-spacing: 0px;
 	font-size: 11px;
 	font-weight: 400;
 	color: black;
 	text-decoration: none;
 	line-height: 15px;
 	text-align: left;
-	padding-top: 2px;
+	padding-top: 0px;
 }
 
 .header-text {
 	font-family: CothamSans, sans-serif;
-	letter-spacing: 1.5px;
+	letter-spacing: .5px;
 	font-size: 13px;
 	font-weight: 400;
 	color: black;
@@ -225,7 +225,7 @@ a:active {
 
 .header-text-project {
 	font-family: CothamSans, sans-serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 13px;
 	font-weight: 800;
 	text-align: left;
@@ -238,7 +238,7 @@ a:active {
 }
 
 .project-header-text {
-	font-family: CothamSans, sans-serif;
+	font-family: LibreBaskerville-Regular, sans-serif;
 	letter-spacing: 1.5px;
 	font-size: 13px;
 	font-weight: 800;
