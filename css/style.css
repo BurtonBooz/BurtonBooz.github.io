@@ -1,9 +1,11 @@
+
 /** Links **/
 
 a {
 	color: black;
 	text-decoration: none;
 }
+
 
 /*** current page ***/
 
@@ -21,6 +23,13 @@ a {
 }
 
 /** Website Fonts **/
+
+@font-face {
+	font-family: 'Cormorant';
+	src: url('../burtonbooz.github.io/css/font/Cormorant-Light.ttf'), format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'CothamSans';
@@ -61,10 +70,10 @@ a {
 }
 
 #burtonbooz-text {
-	font-family: LibreBaskerville-Regular, sans-serif;
-	letter-spacing: 0px;
-	font-size: 11px;
-	font-weight: 400;
+	font-family: Cormorant, sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+	font-weight: 600;
 	color: black;
 	text-decoration: none;
 	line-height: 15px;
@@ -181,8 +190,8 @@ a:active {
 }
 
 .project-title {
-	font-family: LibreBaskerville-Regular, sans-serif;
-	font-weight: 900;
+	font-family: Cormorant, sans-serif;
+	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 13px;
 	text-align: center;
@@ -238,10 +247,10 @@ a:active {
 }
 
 .project-header-text {
-	font-family: LibreBaskerville-Regular, sans-serif;
+	font-family: Cormorant, sans-serif;
 	letter-spacing: 1.5px;
-	font-size: 13px;
-	font-weight: 800;
+	font-size: 20px;
+	font-weight: 600;
 	text-align: left;	
 }
 
@@ -402,3 +411,6 @@ iframe {
 	width: 100vw;
 }
 
+/** typefaces **/
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
