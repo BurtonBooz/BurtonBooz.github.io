@@ -1,3 +1,9 @@
+/*
+* {
+	transition: all .5s;
+}
+*/
+
 
 /** Links **/
 
@@ -259,6 +265,15 @@ a:active {
 	letter-spacing: .5px;
 	font-size: 13px;
 	font-weight: 400;
+	text-align: left;
+	line-height: 20px;
+}
+
+.project-caption-text {
+	font-family: Cormorant, sans-serif;
+	letter-spacing: 1px;
+	font-size: 11px;
+	font-weight: 600;
 	text-align: left;
 	line-height: 20px;
 }

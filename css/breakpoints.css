@@ -1,5 +1,11 @@
 @media only screen and (max-width: 1266px) {
 	
+/*
+	* {
+	transition: all .5s;
+	}
+*/
+	
 /** main-page **/
 	
 	#header-bar-bg {
@@ -119,6 +125,11 @@
 }
 
 @media only screen and (max-width: 966px) {
+	
+	* {
+	transition: all .5s;
+	}
+	
 
 /** main-page **/
 	

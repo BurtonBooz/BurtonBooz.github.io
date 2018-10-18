@@ -113,7 +113,8 @@
 /**** ABOOUT + CONTACT ****/
 
 .burton-headshot {
-	background-image: url(images/about-contact/burton-headshot.jpg)
+	background-image: url(images/about-contact/burton-headshot.jpg);
+	margin-bottom: 20px;
 }
 
 /**** PROJECT: SEVENEVES TITLE SEQUENCE ****/
@@ -247,6 +248,11 @@
 	overflow:hidden;
 	
 	height: 500px;
+}
+
+.project-image-format:active {
+	width: 900px;
+	height: 900px;
 }
 
 .project-image-format-wide {
