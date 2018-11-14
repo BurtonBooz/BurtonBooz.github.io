@@ -1,10 +1,8 @@
 @media only screen and (max-width: 1266px) {
 	
-/*
 	* {
 	transition: all .5s;
 	}
-*/
 	
 /** main-page **/
 	
@@ -57,16 +55,34 @@
 	height: 300px;
 	width: 235px;
 }
+	
+.about-elsewhere {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	text-align: left;
+	width: 300px;
+}
 
 .elsewhere-text-format {
-	padding-bottom: 20px;
-	padding-left: 20px;
+	margin-right: 10px;
+	text-align: left;
 }
 
 .about-contact-text-format {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+	margin-top: 20px;
+	width: 400px;
+	z-index: 3;
+}
+	
+#portrait-container {
+	padding-left: 400px;
+	width: 0px;
+	height: 0px;
+	z-index: 1;
 }
 	
 /** projects **/
@@ -157,6 +173,47 @@
 	#project-image-container {
 		width: 200px;
 	}
+	
+	/** ABOUT & CONTACT **/
+
+.profile-image-format {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	overflow: hidden;
+	
+	height: 300px;
+	width: 235px;
+}
+	
+.about-elsewhere {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	text-align: left;
+	width: 200px;
+}
+
+.elsewhere-text-format {
+	margin-right: 10px;
+	text-align: left;
+}
+
+.about-contact-text-format {
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	width: 200px;
+	z-index: 3;
+}
+	
+#portrait-container {
+	padding-left: 200px;
+	width: 0px;
+	height: 0px;
+	z-index: 1;
+}
 	
 	/** footer **/
 	

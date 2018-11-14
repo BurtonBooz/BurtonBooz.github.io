@@ -64,7 +64,7 @@ a {
 #header-bar {
 	position: absolute;
 	width: 1200px;
-	
+
 	display:flex;
 	justify-content: space-between;
 }
@@ -129,7 +129,7 @@ a:active {
 #header-bar-project {
 	position: absolute;
 	width: 600px;
-	
+
 	display:flex;
 	justify-content: space-between;
 }
@@ -140,11 +140,11 @@ a:active {
 	bottom: 0;
 	background-color: white;
 	width: 100vw;
-	
+
 	font-family: sans-serif;
 	font-size: 10px;
 	letter-spacing: .5px;
-	
+
 	z-index: 4;
 }
 
@@ -155,20 +155,38 @@ a:active {
 	background-repeat: no-repeat;
 	background-position: left;
 	overflow: hidden;
-	
+
 	height: 405px;
 	width: 320px;
 }
 
+.about-elsewhere {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	text-align: left;
+	width: 400px;
+}
+
 .elsewhere-text-format {
-	padding-bottom: 20px;
-		padding-left: 20px;
+	margin-right: 10px;
+	text-align: left;
 }
 
 .about-contact-text-format {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+	margin-top: 20px;
+	width: 400px;
+	z-index: 3;
+}
+
+#portrait-container {
+	padding-left: 500px;
+	width: 0px;
+	height: 0px;
+	z-index: 1;
 }
 
 /** PROJECTS **/
@@ -189,9 +207,9 @@ a:active {
 
 .project {
 	height: 400px;
-	
+
 	opacity: 1;
-	
+
 	transition: opacity 2s;
 }
 
@@ -201,13 +219,13 @@ a:active {
 	letter-spacing: 1px;
 	font-size: 13px;
 	text-align: center;
-	
+
 	padding-top: 200px;
-	
+
 	position: relative;
-	
+
 	opacity: 0;
-	
+
 	transition: opacity 2s, letter-spacing 1s;
 }
 
@@ -216,7 +234,7 @@ a:active {
 	height:inherit;
 	width: inherit;
 	opacity: 1;
-	
+
 	transition: opacity 1s;
 }
 
@@ -247,7 +265,7 @@ a:active {
 	padding-top: 25px;
 	color: black;
 	text-decoration: none;
-	
+
 	padding-top: 100px;
 	padding-left: 30px;
 }
@@ -257,7 +275,7 @@ a:active {
 	letter-spacing: 1.5px;
 	font-size: 20px;
 	font-weight: 600;
-	text-align: left;	
+	text-align: left;
 }
 
 .project-info-text {
@@ -281,13 +299,13 @@ a:active {
 #project-page {
 	position: relative;
 	height: 100vh;
-	width: 1200px;	
+	width: 1200px;
 }
 
 .project-image {
 	margin: left;
-	
-	
+
+
 	width: 70vw;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -304,7 +322,7 @@ a:active {
 	position: absolute;
 	width: 800px;
 	padding-left: 30px;
-	
+
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -315,7 +333,7 @@ a:active {
 	width: 100px;
 	height: 200px;
 	z-index: 1;
-	
+
 	opacity: 1;
 }
 
@@ -325,9 +343,9 @@ a:active {
 	width: 350px;
 	top: 130px;
 	padding: 20px;
-	
+
 	z-index: 2;
-	
+
 	opacity: 0;
 }
 
@@ -353,9 +371,9 @@ iframe {
 .side-project {
 	height: 300px;
 	width: 300px;
-	
+
 	opacity: 1;
-	
+
 	transition: opacity 2s;
 }
 
@@ -365,13 +383,13 @@ iframe {
 	letter-spacing: 1px;
 	font-size: 13px;
 	text-align: center;
-	
+
 	padding-top: 150px;
-	
+
 	position: relative;
-	
+
 	opacity: 0;
-	
+
 	transition: opacity 2s, letter-spacing 1s;
 }
 
@@ -409,7 +427,7 @@ iframe {
 #side-project-image-container {
 	position: absolute;
 	width: 100vw;
-	
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
