@@ -34,7 +34,8 @@ function draw() {
   ellipse(320, 300, 100, 100);
 
   // Irises
-
+	
+	strokeWeight(2);
   fill(255);
   stroke(0);
 
@@ -51,7 +52,7 @@ function draw() {
   ellipse(pupilA, pupilY, 60, 60);
 
   // PUPILS
-
+	
   fill(0);
   stroke(0);
 
@@ -75,11 +76,32 @@ function draw() {
 
   rect(mouseX/50 + 230, mouseY/44 + 200, 150, 50, 50);
   rect(mouseX/50 + 410, mouseY/25 + 200, 150, 50, 50);
+	
+// Hair
 
+  strokeWeight(6);
+  fill(0);
+  stroke(0);
+
+//	var hairX = 260;
+//	
+//	rect(mouseX/50 + hairX, mouseY/44 + 20, 15, 80, 50);
+//	
+//	hairX += 15;
+//	
+//  rect(mouseX/50 + hairX, mouseY/44 + 20, 15, 80, 50);
+//
+//	hairX += 15;
+//	
+//  rect(mouseX/50 + hairX, mouseY/44 + 20, 15, 80, 50);
+//	
+	for (var i = 0; i < 250; i += 30 ) {
+		rect(mouseX/200 + i + 270, mouseY/200 + 30, 15, 60);
+	}
+	
   strokeWeight(6);
   fill(255, 100);
   stroke(0);
-  // noStroke();
 
   // Nose
 
