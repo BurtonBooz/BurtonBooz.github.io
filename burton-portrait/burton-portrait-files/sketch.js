@@ -79,9 +79,9 @@ function draw() {
 
 // Hair
 
-  strokeWeight(6);
-  fill(0);
-  stroke(0);
+  // strokeWeight(6);
+  // fill(0);
+  // stroke(0);
 
 	// for (var i = 0; i < 250; i += 30 ) {
 	// 	rect(mouseX/200 + i + 270, mouseY/200 + 30, 15, 60);
@@ -92,6 +92,8 @@ function draw() {
   // stroke(0);
 
   // Nose
+  fill(255);
+  stroke(0);
 
   beginShape();
   vertex(400, 280);
