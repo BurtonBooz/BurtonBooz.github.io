@@ -1,8 +1,6 @@
-/*
 * {
 	transition: all .5s;
 }
-*/
 
 
 /** Links **/
@@ -10,6 +8,11 @@
 a {
 	color: black;
 	text-decoration: none;
+}
+
+#link {
+	color: black;
+	text-decoration: underline;
 }
 
 
@@ -359,8 +362,15 @@ a:active {
 
 iframe {
 	position: relative;
-	width: 60vw;
+	width: 70vw;
 	height: 40vw;
+	margin: left;
+}
+
+#reel {
+	position: relative;
+	width: 90vw;
+	height: 51vw;
 	margin: left;
 }
 
