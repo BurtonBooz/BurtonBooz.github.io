@@ -367,6 +367,13 @@ iframe {
 	margin: left;
 }
 
+.iframe-left {
+	position: relative;
+	width: 40vw;
+	height: 40vw;
+	background-position: left;
+}
+
 #reel {
 	position: relative;
 	width: 90vw;
