@@ -321,6 +321,10 @@ a:active {
 	height: 65px;
 }
 
+#project-bottom-buffer {
+	height: 400px;
+}
+
 #project-image-container {
 	position: absolute;
 	width: 800px;

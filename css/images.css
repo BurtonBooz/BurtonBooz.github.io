@@ -197,6 +197,10 @@
 	background-image: url(images/illustrations/salamander-2.jpg)
 }
 
+.gremlin {
+	background-image: url(images/illustrations/gremlin.jpg)
+}
+
 /**** PROJECT: M.O.E. ****/
 
 /**** PROJECT: SOUNDOUT ****/
@@ -475,6 +479,10 @@
 	overflow: hidden;
 }
 
+.fhota {
+	background-image: url(images/various-posters/fhota.jpg);
+}
+
 .various-posters-1 {
 	background-image: url(images/various-posters/various-posters-1.jpg);
 }
@@ -491,8 +499,8 @@
 	background-image: url(images/various-posters/various-posters-4.jpg)
 }
 
-.various-posters-5 {
-	background-image: url(images/various-posters/various-posters-5.jpg)
+.tucked-away-place {
+	background-image: url(images/various-posters/tucked-away-place.jpg)
 }
 
 .various-posters-6 {
