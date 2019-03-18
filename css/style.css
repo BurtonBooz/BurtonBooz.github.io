@@ -35,21 +35,21 @@ a {
 
 @font-face {
 	font-family: 'Cormorant';
-	src: url('../burtonbooz.github.io/css/font/Cormorant-Light.ttf'), format('truetype');
+	src: url('../burtonbooz.github.io/font/Cormorant-Light.ttf'), format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'CothamSans';
-	src: url('../burtonbooz.github.io/css/font/CothamSans.otf'), format('opentype');
+	src: url('../burtonbooz.github.io/font/CothamSans.otf'), format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'LibreBaskerville-Regular';
-	src: url('../burtonbooz.github.io/css/font/LibreBaskerville-Regular.otf'), format('opentype');
+	src: url('../burtonbooz.github.io/font/LibreBaskerville-Regular.otf'), format('opentype');
 	font-weight: thin;
 	font-style: normal;
 }
