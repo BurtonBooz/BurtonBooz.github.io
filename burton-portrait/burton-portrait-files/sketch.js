@@ -67,6 +67,24 @@ function draw() {
   // R Pupil
 
   ellipse(pupilA, pupilY, 40, 40);
+	
+	  // Eyelids
+
+  strokeWeight(6);
+  fill(255);
+  stroke(0);
+
+  if (mouseIsPressed == true) {
+    // rect(240, 210, 150, 100);
+    // rect(240, 310, 150, 100);
+    arc(480, 300, 100, 100, PI, 0);
+    arc(480, 300, 100, 100, 0, PI);
+    line(435, 310, 525, 310);
+
+    arc(320, 300, 100, 100, PI, 0);
+    arc(320, 300, 100, 100, 0, PI);
+    line(275, 310, 365, 310);
+  }
 
   // Eyebrows
 
