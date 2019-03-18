@@ -33,26 +33,28 @@ a {
 
 /** Website Fonts **/
 
+
 @font-face {
 	font-family: 'Cormorant';
-	src: url('../burtonbooz.github.io/font/Cormorant-Light.ttf'), format('truetype');
+	src: url('/font/Cormorant-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'CothamSans';
-	src: url('../burtonbooz.github.io/font/CothamSans.otf'), format('opentype');
+	src: url('/font/CothamSans.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'LibreBaskerville-Regular';
-	src: url('../burtonbooz.github.io/font/LibreBaskerville-Regular.otf'), format('opentype');
+	src: url('../font/LibreBaskerville-Regular.otf') format('opentype');
 	font-weight: thin;
 	font-style: normal;
 }
+s
 
 /** HEADER **/
 
@@ -79,7 +81,7 @@ a {
 }
 
 #burtonbooz-text {
-	font-family: Cormorant, sans-serif;
+	font-family: Cormorant, serif;
 	letter-spacing: 0.5px;
 	font-size: 13px;
 	font-weight: 600;
