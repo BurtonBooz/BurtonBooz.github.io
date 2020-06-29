@@ -1,138 +1,122 @@
 /**** project thumbnail images - main page ******/
 
+#sweet {
+	background-image: url(images/sweet/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#joywave {
+	background-image: url(images/joywave/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#tati {
+	background-image: url(images/tati/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
 #usscs {
 	background-image: url(images/usscs/bg.gif);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #illustrations {
-	background-image: url(images/illustrations/bg.png);
-	background-size: cover;
+	background-image: url(images/illustrations/bg.jpg);
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #moe {
-	background-image: url(images/moe/bg.png);
-	background-size: cover;
+	background-image: url(images/moe/bg.jpg);
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #two-degrees {
 	background-image: url(images/two-degrees/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #soundout {
 	background-image: url(images/soundout/bg.png);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #seveneves-title-sequence {
 	background-image: url(images/seveneves-title-sequence/bg.gif);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #terra-sizzle-reel {
 	background-image: url(images/terra-sizzle-reel/bg.gif);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #ikea-annual-report {
 	background-image: url(images/ikea-annual-report/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #various-posters {
-	background-image: url(images/various-posters/bg.jpg);
-	background-size: cover;
+	background-image: url(images/various-posters/bg.gif);
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #where-will-i-go {
 	background-image: url(images/where-will-i-go/bg.gif);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #urban-grow {
 	background-image: url(images/urban-grow/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #speculate-create {
 	background-image: url(images/speculate-create/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: right;
 	overflow: hidden;
 }
 
 #medusozoa {
 	background-image: url(images/medusozoa/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;
 	overflow: hidden;
 }
 
 #alien {
 	background-image: url(images/alien/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #denis-villeneuve-retrospective {
 	background-image: url(images/denis-villeneuve-retrospective/bg.png);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #bits {
 	background-image: url(images/bits/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
 #essential-asimov {
 	background-image: url(images/essential-asimov/bg.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 	overflow: hidden;
 }
 
@@ -161,12 +145,52 @@
 
 /**** PROJECT: ILLUSTRATIONS ****/
 
-.slay-the-dragon {
-	background-image: url(images/illustrations/slay-the-dragon.jpg)
+.smolder {
+	background-image: url(images/illustrations/smolder.jpg)
 }
 
-.contemplate-the-void {
-	background-image: url(images/illustrations/contemplate-the-void.gif)
+.wish-i-was-lizard {
+	background-image: url(images/illustrations/wish-i-was-lizard.jpg)
+}
+
+.wire-chair {
+	background-image: url(images/illustrations/wire-chair.jpg)
+}
+
+.sucky {
+	background-image: url(images/illustrations/sucky.jpg)
+}
+
+.stretch {
+	background-image: url(images/illustrations/stretch-2.jpg)
+}
+
+.long-dog {
+	background-image: url(images/illustrations/long-dog.jpg)
+}
+
+.aquarium {
+	background-image: url(images/illustrations/aquarium.jpg)
+}
+
+.transhumanist {
+	background-image: url(images/illustrations/transhumanist.jpg)
+}
+
+.boots {
+	background-image: url(images/illustrations/boots.jpg)
+}
+
+.butterfly-bitmap {
+	background-image: url(images/illustrations/butterfly-bitmap.jpg)
+}
+
+.dino-tee {
+	background-image: url(images/illustrations/dino-tee.jpg)
+}
+
+.slay-the-dragon {
+	background-image: url(images/illustrations/slay-the-dragon.jpg)
 }
 
 .yard-work {
@@ -450,9 +474,45 @@
 	width: 500px;
 }
 
+.project-image-format-side-scroll-rect-vert {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:top;
+	overflow:hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	height: 60vw;
+	width: 500px;
+}
+
+.project-image-format-side-scroll-square {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	height: 50vw;
+	width: 600px;
+}
+
+/*** sIMAGE PRESS ***/
+
 .project-image-format:active {
 	width: 800px;
 	height: 800px;
+}
+
+.project-image-format-side-scroll-rect-vert:active {
+	height: 60vw;
+	width: 650px;
+}
+
+.project-image-format-side-scroll-square:active {
+	width: 800px;
+	height: 850px;
 }
 
 .project-image-format-wide {
@@ -477,6 +537,18 @@
 	padding: 2vw;
 	margin-bottom: 1vw;
 	overflow: hidden;
+}
+
+.country-cellar-supper-1 {
+	background-image: url(images/various-posters/country-cellar-supper-1.jpg)
+}
+
+.decor {
+	background-image: url(images/various-posters/decor.jpg)
+}
+
+.contemplate-the-void {
+	background-image: url(images/various-posters/contemplate-the-void.gif)
 }
 
 .fhota {

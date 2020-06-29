@@ -1,8 +1,12 @@
 @media only screen and (max-width: 1266px) {
 	
+	/**
+	
 	* {
 	transition: all .5s;
-	}
+	} 
+	
+	**/
 	
 /** main-page **/
 	
@@ -35,7 +39,7 @@
 	}
 	
 	.project-title {
-		padding-top: 150px;
+		padding-top: 10;
 		font-size: 10px;
 		letter-spacing: 1px;
 	}
@@ -73,13 +77,13 @@
 	padding-top: 0px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 70px;
 	width: 400px;
 	z-index: 3;
 }
 	
 #portrait-container {
-	padding-left: 400px;
+	padding-left: 50vw;
 	width: 0px;
 	height: 0px;
 	z-index: 1;
@@ -141,10 +145,13 @@
 }
 
 @media only screen and (max-width: 966px) {
+	/** 
 	
 	* {
 	transition: all .5s;
 	}
+	
+	**/
 	
 
 /** main-page **/
@@ -203,13 +210,13 @@
 	padding-top: 0px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 70px;
 	width: 200px;
 	z-index: 3;
 }
 	
 #portrait-container {
-	padding-left: 200px;
+	padding-left: 50vw;
 	width: 0px;
 	height: 0px;
 	z-index: 1;
@@ -263,4 +270,11 @@
 	.hr {
 		width: 300px;
 	}
+	
+	#reel {
+	position: fixed;
+	width: 60vw;
+	height: 35vw;
+	margin-top: 65px;
+}
 }

@@ -1,18 +1,25 @@
-* {
+/** * {
 	transition: all .5s;
-}
+	background-color: black;
+} **/
 
+.crosshair{
+	cursor: crosshair;
+	height: 100vh;
+	overflow: visible;
+}
 
 /** Links **/
 
 a {
-	color: black;
+	color: lavender;
 	text-decoration: none;
 }
 
 #link {
-	color: black;
+	color: whtie;
 	text-decoration: underline;
+	background-color: transparent;
 }
 
 
@@ -54,7 +61,6 @@ a {
 	font-weight: thin;
 	font-style: normal;
 }
-s
 
 /** HEADER **/
 
@@ -62,7 +68,7 @@ s
 	height: 65px;
 	width: 100vw;
 	position:fixed;
-	background-color:white;
+	background-color: white;
 	z-index: 9999;
 }
 
@@ -85,11 +91,10 @@ s
 	letter-spacing: 0.5px;
 	font-size: 13px;
 	font-weight: 600;
-	color: black;
-	text-decoration: none;
 	line-height: 15px;
 	text-align: left;
 	padding-top: 0px;
+	text-decoration: none;
 }
 
 .header-text {
@@ -97,7 +102,7 @@ s
 	letter-spacing: .5px;
 	font-size: 13px;
 	font-weight: 400;
-	color: black;
+	color: lavender;
 	text-decoration: none;
 }
 
@@ -127,7 +132,7 @@ a:active {
 	height: 65px;
 	width: 100vw;
 	position:fixed;
-	background-color:white;
+	background-color:black;
 	z-index: 9999;
 }
 
@@ -143,12 +148,13 @@ a:active {
 	position: fixed;
 	padding: 2px;
 	bottom: 0;
-	background-color: white;
+	background-color: black;
 	width: 100vw;
 
 	font-family: sans-serif;
 	font-size: 10px;
 	letter-spacing: .5px;
+	color: white;
 
 	z-index: 4;
 }
@@ -167,8 +173,9 @@ a:active {
 
 .about-elsewhere {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 70px;
+	margin-top: 20px;
 	text-align: left;
 	width: 400px;
 }
@@ -182,13 +189,13 @@ a:active {
 	padding-top: 0px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 70px;
 	width: 400px;
 	z-index: 3;
 }
 
 #portrait-container {
-	padding-left: 500px;
+	padding-left: 50vw;
 	width: 0px;
 	height: 0px;
 	z-index: 1;
@@ -199,10 +206,13 @@ a:active {
 /** Projects – Main Page **/
 
 #project-container {
-	width: 1200px;
 	position: absolute;
+	width: 1200px;
 	height: auto;
 	margin: left;
+	
+	display: flex;
+	flex-flow: wrap;
 }
 
 #project-buffer {
@@ -211,76 +221,126 @@ a:active {
 }
 
 .project {
-	height: 400px;
+	width: 500px;
+	height: 500px;
+	padding-right:20px;
+	padding-bottom: 80px;
+	position: relative;
 
-	opacity: 1;
+	/** opacity: 1; **/
 
-	transition: opacity 2s;
+	/** transition: height 2s; **/
 }
 
 .project-title {
-	font-family: Cormorant, sans-serif;
+	font-family: CothamSans, sans-serif;
 	font-weight: 600;
 	letter-spacing: 1px;
-	font-size: 13px;
-	text-align: center;
-
-	padding-top: 200px;
+	line-height: 15px;
+	font-size: 12px;
+	text-align: left;
+	color: lavender;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 	position: relative;
 
 	opacity: 0;
 
+	transition: opacity .5s, letter-spacing .5s;
+	
+	background-color: transparent;
+}
+
+.project-subtitle {
+	font-family: CothamSans, sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 8px;
+	text-align: left;
+	color: white;
+
+	position: absolute;
+
+	opacity: 0;
+
 	transition: opacity 2s, letter-spacing 1s;
+	
+	background-color: transparent;
 }
 
 .project-image-thumbnail {
-	position: absolute;
-	height:inherit;
-	width: inherit;
+	background-size: cover;
+	width:inherit;
+	height: inherit;
 	opacity: 1;
-
-	transition: opacity 1s;
+	background-position: top;
+	
+	/** transition: opacity 1s; **/
 }
 
-.project:hover {
-	opacity: 1;
-}
 
-.project:hover .project-image-thumbnail {
+/** .project:hover {
+	height: 550px;
+} **/
+
+/** .project:hover .project-image-thumbnail {
 	opacity: .1;
-}
+} **/
 
 .project:hover .project-title {
 	opacity: 1;
 }
 
 .project:hover .project-title{
-	letter-spacing: 3px;
+	letter-spacing: 2px;
+} 
+
+.project:hover .project-subtitle {
+	opacity: 1;
 }
+
+.project:hover .project-subtitle{
+	letter-spacing: 2px;
+} 
+
+**/
 
 /** Projects – Project Page **/
 
+.project-info-box {
+	position: fixed;
+	width: 100px;
+	height: 200px;
+	z-index: 1;
+	color: lavender;
+
+	opacity: 1;
+}
+
 .header-text-project {
+	position: fixed;
 	font-family: CothamSans, sans-serif;
 	letter-spacing: 1px;
 	font-size: 13px;
 	font-weight: 800;
 	text-align: left;
 	padding-top: 25px;
-	color: black;
 	text-decoration: none;
+	color: lavender;
 
 	padding-top: 100px;
 	padding-left: 30px;
 }
 
 .project-header-text {
-	font-family: Cormorant, sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1.5px;
 	font-size: 20px;
 	font-weight: 600;
 	text-align: left;
+	color: lavender;
+	background-color: transparent;
 }
 
 .project-info-text {
@@ -290,10 +350,12 @@ a:active {
 	font-weight: 400;
 	text-align: left;
 	line-height: 20px;
+	color: lavender;
+	background-color: transparent;
 }
 
 .project-caption-text {
-	font-family: Cormorant, sans-serif;
+	font-family: CothamSans, sans-serif;
 	letter-spacing: 1px;
 	font-size: 11px;
 	font-weight: 600;
@@ -311,7 +373,7 @@ a:active {
 	margin: left;
 
 
-	width: 70vw;
+	width: 100vw;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	/** width: 60vw; **/
@@ -327,28 +389,36 @@ a:active {
 	height: 400px;
 }
 
+#project-side-buffer {
+	width: 400px;
+}
+
 #project-image-container {
 	position: absolute;
-	width: 800px;
+	width: 1200px;
 	padding-left: 30px;
+	background-color: transparent;
 
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.project-info-box {
-	position: fixed;
-	width: 100px;
-	height: 200px;
-	z-index: 1;
+#project-image-side-scroll-container {
+	position: relative;
+	width: 100vw;
+	padding-left: 30px;
+	background-color: transparent;
+	overflow: visible;
 
-	opacity: 1;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .project-info {
 	position: fixed;
-	background-color: white;
+	background-color: black;
 	width: 350px;
 	top: 130px;
 	padding: 20px;
@@ -371,7 +441,7 @@ iframe {
 	width: 70vw;
 	height: 40vw;
 	margin: left;
-}
+	}
 
 .iframe-left {
 	position: relative;
@@ -381,10 +451,10 @@ iframe {
 }
 
 #reel {
-	position: relative;
+	position: fixed;
 	width: 90vw;
-	height: 51vw;
-	margin: left;
+	height: 50vw;
+	margin-top: 65px;
 }
 
 /******** Side Projects and Sketches ********/
