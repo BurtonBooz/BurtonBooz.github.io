@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1266px) {
+@media only screen and (max-width: 1080px) {
 	
 	/**
 	
@@ -144,7 +144,7 @@
 	}
 }
 
-@media only screen and (max-width: 966px) {
+@media only screen and (max-width: 560px) {
 	/** 
 	
 	* {
@@ -169,7 +169,7 @@
 	}
 	
 	#project-container {
-		width: 600px;
+		width: 300px;
 	}
    
 	.project {
@@ -226,6 +226,7 @@
 	
 	#footer-bar {
 		width: 300px;
+		margin-left: 65px;
 	}
 
 /** projects **/

@@ -1,5 +1,11 @@
 /**** project thumbnail images - main page ******/
 
+#menagerie {
+	background-image: url(images/menagerie/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
 #sweet {
 	background-image: url(images/sweet/bg.gif);
 	background-repeat: no-repeat;
