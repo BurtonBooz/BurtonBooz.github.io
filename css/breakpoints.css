@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1080px) {
 	
 	/**
 	
@@ -11,17 +11,25 @@
 /** main-page **/
 	
 	#header-bar-bg {
-		width: 900px;
+		width: 1080px;
 	}
 	
 	#header-bar {
-		width: 900px;
+		width: 1080px;
+	}
+	
+	.header-text-box {
+	text-align: center;
+	width: 100px;
+	height: 65px;
+	padding-top: 25px;
 	}
 	
 	#project-buffer {
-		width: 900px;
+		width: 1080px;
 	}
 	
+	/** 
 	#burtonbooz-text {
 		font-size: 8.5px;
 		line-height: 11px;
@@ -33,9 +41,9 @@
 		font-size: 10px;
 		letter-spacing: 1px;
 	}
-	
+	**/ 
 	#project-container {
-		width: 900px;
+		width: 1080px;
 	}
 	
 	.project-title {
@@ -44,55 +52,96 @@
 		letter-spacing: 1px;
 	}
 	
+	.project-title {
+		font-family: CothamSans, sans-serif;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 15px;
+		font-size: 12px;
+		text-align: left;
+		color: lavender;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		position: relative;
+		opacity: 1;
+	}
+
+	.project-subtitle {
+		font-family: CothamSans, sans-serif;
+		font-weight: 600;
+		letter-spacing: 1px;
+		font-size: 8px;
+		text-align: left;
+		color: white;
+
+		position: absolute;
+		
+		opacity: 1;
+	}
+
+	.project-image-thumbnail {
+		background-size: cover;
+		width:inherit;
+		height: inherit;
+		opacity: 1;
+		background-position: top;
+
+		/** transition: opacity 1s; **/
+	}
+
+	
 	#footer-bar {
 		width: 900px;
 	}
 	
 /** ABOUT & CONTACT **/
 
-.profile-image-format {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
-	overflow: hidden;
-	
-	height: 300px;
-	width: 235px;
-}
-	
-.about-elsewhere {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 70px;
-	text-align: left;
-	width: 300px;
-}
+	.profile-image-format {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		overflow: hidden;
 
-.elsewhere-text-format {
-	margin-right: 10px;
-	text-align: left;
-}
+		height: 300px;
+		width: 235px;
+	}
 
-.about-contact-text-format {
-	padding-top: 0px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-top: 70px;
-	width: 400px;
-	z-index: 3;
-}
-	
-#portrait-container {
-	padding-left: 50vw;
-	width: 0px;
-	height: 0px;
-	z-index: 1;
-}
-	
+	.about-elsewhere {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 70px;
+		text-align: left;
+		width: 300px;
+	}
+
+	.elsewhere-text-format {
+		margin-right: 10px;
+		text-align: left;
+	}
+
+	.about-contact-text-format {
+		padding-top: 0px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		margin-top: 70px;
+		width: 300px;
+		z-index: 3;
+	}
+
+	#portrait-container {
+		position: absolute;
+		padding-top: 40vh;
+		padding-left: 0px;
+		width: 0px;
+		height: 0px;
+		z-index: 1;
+	}
+
 /** projects **/
 	
 	.grid-container {
-		width: 900px;
+		width: 1080px;
 	}
 	
 	#project-page {
@@ -106,8 +155,8 @@
 	}
   
 	.project {
-    height: 300px;
-		width: 300px;
+    height: 450px;
+		width: 450px;
   }
 	
 	#project-image-container {
@@ -131,9 +180,9 @@
 	}
 	
 	.project-info-text {
-		font-size: 10px;
+		font-size: 13px;
 		letter-spacing: .5px;
-		line-height: 17px;
+		line-height: 20px;
 	}
 	
 	/** side-projects **/
@@ -144,7 +193,7 @@
 	}
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 640px) {
 	/** 
 	
 	* {
@@ -157,7 +206,7 @@
 /** main-page **/
 	
 	#header-bar-bg {
-		width: 300px;
+		width: 640px;
 	}
 	
 	#header-bar {
@@ -194,12 +243,12 @@
 	}
 	
 	#project-container {
-		width: 300px;
+		width: 360px;
 	}
    
 	.project {
-    height: 300px;
-		width: 300px;
+    height: 500px;
+		width: 500px;
   }
 	
 	#project-image-container {
@@ -208,45 +257,47 @@
 	
 	/** ABOUT & CONTACT **/
 
-.profile-image-format {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
-	overflow: hidden;
-	
-	height: 300px;
-	width: 235px;
-}
-	
-.about-elsewhere {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 70px;
-	text-align: left;
-	width: 200px;
-}
+	.profile-image-format {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		overflow: hidden;
 
-.elsewhere-text-format {
-	margin-right: 10px;
-	text-align: left;
-}
+		height: 300px;
+		width: 235px;
+	}
 
-.about-contact-text-format {
-	padding-top: 0px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	margin-top: 70px;
-	width: 200px;
-	z-index: 3;
-}
+	.about-elsewhere {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 70px;
+		text-align: left;
+		width: 200px;
+	}
+
+	.elsewhere-text-format {
+		margin-right: 10px;
+		text-align: left;
+	}
+
+	.about-contact-text-format {
+		padding-top: 0px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		margin-top: 30px;
+		width: 200px;
+		z-index: 3;
+	}
 	
-#portrait-container {
-	padding-left: 50vw;
-	width: 0px;
-	height: 0px;
-	z-index: 1;
-}
-	
+	#portrait-container {
+		position: absolute;
+		padding-top: 32vh;
+		padding-left: 0px;
+		width: 0px;
+		height: 0px;
+		z-index: 1;
+	}
+
 	/** footer **/
 	
 	#footer-bar {
@@ -257,7 +308,7 @@
 /** projects **/
 
 	.grid-container {
-			width: 300px;
+			width: 360px;
 		}
 
 	#project-page {
@@ -298,9 +349,9 @@
 	}
 	
 	#reel {
-	position: fixed;
-	width: 60vw;
-	height: 35vw;
-	margin-top: 65px;
-}
+		position: fixed;
+		width: 90vw;
+		height: 50vw;
+		margin-top: 65px;
+	}
 }

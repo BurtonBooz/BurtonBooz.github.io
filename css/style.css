@@ -207,12 +207,13 @@ a:active {
 
 #project-container {
 	position: absolute;
-	width: 1200px;
+	width: 1700px;
 	height: auto;
 	margin: left;
 	
 	display: flex;
 	flex-flow: wrap;
+	flex-direction: row;
 }
 
 #project-buffer {
