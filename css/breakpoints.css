@@ -20,9 +20,22 @@
 	
 	.header-text-box {
 	text-align: center;
-	width: 100px;
+	width: 1080px;
 	height: 65px;
 	padding-top: 25px;
+	}
+	
+	.header-text {
+		font-size: 21px;
+		letter-spacing: 1px;
+	}
+	
+	#burtonbooz-text {
+		font-size: 18px;
+		line-height: 11px;
+		letter-spacing: 0px;
+		padding-top: 5px;
+		text-align: center
 	}
 	
 	#project-buffer {
@@ -47,21 +60,15 @@
 	}
 	
 	.project-title {
-		padding-top: 10;
-		font-size: 10px;
-		letter-spacing: 1px;
-	}
-	
-	.project-title {
 		font-family: CothamSans, sans-serif;
 		font-weight: 600;
 		letter-spacing: 1px;
-		line-height: 15px;
-		font-size: 12px;
+		line-height: 21px;
+		font-size: 18px;
 		text-align: left;
 		color: lavender;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 
 		position: relative;
 		opacity: 1;
@@ -70,8 +77,8 @@
 	.project-subtitle {
 		font-family: CothamSans, sans-serif;
 		font-weight: 600;
-		letter-spacing: 1px;
-		font-size: 8px;
+		letter-spacing: 1.5px;
+		font-size: 11px;
 		text-align: left;
 		color: white;
 
@@ -125,13 +132,13 @@
 		padding-right: 20px;
 		padding-bottom: 20px;
 		margin-top: 70px;
-		width: 300px;
+		width: 500px;
 		z-index: 3;
 	}
 
 	#portrait-container {
 		position: absolute;
-		padding-top: 40vh;
+		padding-top: 50vh;
 		padding-left: 0px;
 		width: 0px;
 		height: 0px;
@@ -165,7 +172,7 @@
 		padding-left: 25px;
 	}
 	
-		.project-info {
+	.project-info {
 		width: 300px;
 	}
 	
@@ -180,9 +187,9 @@
 	}
 	
 	.project-info-text {
-		font-size: 13px;
+		font-size: 21px;
 		letter-spacing: .5px;
-		line-height: 20px;
+		line-height: 28px;
 	}
 	
 	/** side-projects **/
@@ -210,7 +217,7 @@
 	}
 	
 	#header-bar {
-		width: 300px;
+		width: 640px;
 		
 		display:flex;
 		justify-content: space-between;
@@ -219,20 +226,20 @@
 	
 	.header-text-box {
 		text-align: center;
-		width: 260px;
+		width: 350px;
 		height: 35px;
-		padding-top: 25px;
+		padding-top: 15px;
 	}
 	
 	.header-text {
 		padding-top: 5px;
-		font-size: 15px;
+		font-size: 21px;
 		letter-spacing: 1px;
 	}
 	
 	#burtonbooz-text {
-		font-size: 12px;
-		line-height: 11px;
+		font-size: 18px;
+		line-height: 18px;
 		letter-spacing: 0px;
 		padding-top: 0px;
 		text-align: center
@@ -244,6 +251,34 @@
 	
 	#project-container {
 		width: 360px;
+	}
+	
+	.project-title {
+		font-family: CothamSans, sans-serif;
+		font-weight: 600;
+		letter-spacing: 1px;
+		line-height: 21px;
+		font-size: 18px;
+		text-align: left;
+		color: lavender;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		position: relative;
+		opacity: 1;
+	}
+
+	.project-subtitle {
+		font-family: CothamSans, sans-serif;
+		font-weight: 600;
+		letter-spacing: 1.5px;
+		font-size: 11px;
+		text-align: left;
+		color: white;
+
+		position: absolute;
+		
+		opacity: 1;
 	}
    
 	.project {
@@ -284,14 +319,14 @@
 		padding-top: 0px;
 		padding-right: 20px;
 		padding-bottom: 20px;
-		margin-top: 30px;
-		width: 200px;
+		margin-top: 70px;
+		width: 400px;
 		z-index: 3;
 	}
 	
 	#portrait-container {
 		position: absolute;
-		padding-top: 32vh;
+		padding-top: 52vh;
 		padding-left: 0px;
 		width: 0px;
 		height: 0px;
@@ -308,14 +343,14 @@
 /** projects **/
 
 	.grid-container {
-			width: 360px;
-		}
+		width: 360px;
+	}
 
 	#project-page {
-			position: relative;
-			height: 100vh;
-			width: 300px;
-		}
+		position: relative;
+		height: 100vh;
+		width: 300px;
+	}
 	
 	.project-info {
 		width: 250px;
@@ -332,9 +367,9 @@
 	}
 	
 	.project-info-text {
-		font-size: 7px;
+		font-size: 21px;
 		letter-spacing: .5px;
-		line-height: 14px;
+		line-height: 28px;
 	}
 	
 	/** side-projects **/
