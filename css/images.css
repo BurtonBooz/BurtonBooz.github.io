@@ -1,5 +1,18 @@
 /**** project thumbnail images - main page ******/
 
+
+#true-crime {
+	background-image: url(images/true-crime/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#emergency {
+	background-image: url(images/emergency/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
 #menagerie {
 	background-image: url(images/menagerie/bg.gif);
 	background-repeat: no-repeat;
