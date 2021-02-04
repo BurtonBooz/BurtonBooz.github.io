@@ -1,5 +1,16 @@
 /**** project thumbnail images - main page ******/
 
+#hell-bent {
+	background-image: url(images/hell-bent/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#solar-system {
+	background-image: url(images/solar-system/bg.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
 
 #true-crime {
 	background-image: url(images/true-crime/bg.gif);
@@ -161,6 +172,54 @@
 }
 
 /**** PROJECT: USSCS ****/
+
+/**** PROJECT: SOLAR SYSTEM PRODUCTION DESIGN ****/
+
+.hell-bent-1 {
+	background-image: url(images/hell-bent/1.jpg)
+}
+
+.hell-bent-2 {
+	background-image: url(images/hell-bent/2.jpg)
+}
+
+.hell-bent-3 {
+	background-image: url(images/hell-bent/3.jpg)
+}
+
+.hell-bent-4 {
+	background-image: url(images/hell-bent/4.jpg)
+}
+
+/**** PROJECT: SOLAR SYSTEM PRODUCTION DESIGN ****/
+
+.solar-system-1 {
+	background-image: url(images/solar-system/1.jpeg)
+}
+
+.solar-system-2 {
+	background-image: url(images/solar-system/titles-vector-artwork.jpg)
+}
+
+.solar-system-3 {
+	background-image: url(images/solar-system/flag-graphic.jpg)
+}
+
+.solar-system-4 {
+	background-image: url(images/solar-system/18.jpeg)
+}
+
+.solar-system-5 {
+	background-image: url(images/solar-system/5.jpeg)
+}
+
+.solar-system-6 {
+	background-image: url(images/solar-system/7.jpeg)
+}
+
+.solar-system-7 {
+	background-image: url(images/solar-system/19.jpeg)
+}
 
 /**** PROJECT: ILLUSTRATIONS ****/
 
@@ -501,7 +560,7 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	
-	height: 60vw;
+	height: 800px;
 	width: 500px;
 }
 
@@ -513,7 +572,7 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	
-	height: 50vw;
+	height: 800px;
 	width: 600px;
 }
 

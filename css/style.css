@@ -271,7 +271,7 @@ a:active {
 }
 
 .project-image-thumbnail {
-	background-size: cover;
+	background-size:cover;
 	width:inherit;
 	height: inherit;
 	opacity: 1;
@@ -408,11 +408,12 @@ a:active {
 #project-image-side-scroll-container {
 	position: relative;
 	width: 100vw;
-	padding-left: 30px;
+	padding-left: ;
 	background-color: transparent;
 	overflow: visible;
 
 	display:flex;
+	flex-direction: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 }
